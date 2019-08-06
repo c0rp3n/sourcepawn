@@ -15,7 +15,7 @@
 
 #include <sp_vm_api.h>
 #include <assert.h>
-#include <am-cxx.h>
+#include <amtl/am-cxx.h>
 #include <amtl/am-autoptr.h>
 #include <amtl/am-platform.h>
 #include <amtl/am-refcounting.h>

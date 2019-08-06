@@ -11,10 +11,10 @@
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
 #include <sp_vm_api.h>
-#include "code-stubs.h"
-#include "linking.h"
+#include "../code-stubs.h"
+#include "../linking.h"
 #include "jit_x86.h"
-#include "environment.h"
+#include "../environment.h"
 
 using namespace sp;
 using namespace SourcePawn;

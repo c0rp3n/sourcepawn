@@ -11,7 +11,7 @@
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
 #include "macro-assembler-x64.h"
-#include "environment.h"
+#include "../environment.h"
 
 namespace sp {
 

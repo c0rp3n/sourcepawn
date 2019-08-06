@@ -31,19 +31,19 @@
 #ifndef _include_sourcepawn_macroassembler_x86h__
 #define _include_sourcepawn_macroassembler_x86h__
 
-#include <assembler.h>
+#include "../assembler.h"
 #include <am-vector.h>
 #include <string.h>
 #include "assembler-x86.h"
-#include "stack-frames.h"
-#include "environment.h"
+#include "../stack-frames.h"
+#include "../environment.h"
 
 namespace sp {
 
 class MacroAssembler : public Assembler
 {
  public:
-  void enterFrame(JitFrameType type, uintptr_t function_id) {
+    void enterFrame(JitFrameType type, uintptr_t function_id) {
     push(ebp);
     movl(ebp, esp);
     push(uint32_t(type));

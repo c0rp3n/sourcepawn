@@ -11,11 +11,11 @@
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
 #include <sp_vm_api.h>
-#include "code-stubs.h"
-#include "linking.h"
+#include "../code-stubs.h"
+#include "../linking.h"
 #include "macro-assembler-x64.h"
 #include "constants-x64.h"
-#include "plugin-context.h"
+#include "../plugin-context.h"
 
 #define __ masm.
 

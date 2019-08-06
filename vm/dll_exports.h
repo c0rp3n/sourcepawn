@@ -34,7 +34,7 @@
 
 #include <sp_vm_base.h>
 
-#if defined WIN32
+#if defined _WIN32 | _WIN64
 #define EXPORTFUNC	extern "C" __declspec(dllexport)
 #elif defined __GNUC__
 #if __GNUC__ >= 3

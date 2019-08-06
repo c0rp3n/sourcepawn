@@ -20,12 +20,12 @@
 #include <sp_vm_types.h>
 #include <sp_vm_api.h>
 #include <am-vector.h>
-#include "jit.h"
-#include "plugin-runtime.h"
-#include "plugin-context.h"
-#include "compiled-function.h"
-#include "opcodes.h"
-#include "macro-assembler.h"
+#include "../jit.h"
+#include "../plugin-runtime.h"
+#include "../plugin-context.h"
+#include "../compiled-function.h"
+#include "../opcodes.h"
+#include "../macro-assembler.h"
 
 using namespace SourcePawn;
 

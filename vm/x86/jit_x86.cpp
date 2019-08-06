@@ -33,17 +33,17 @@
 #include <stdlib.h>
 #include <assert.h>
 #include "jit_x86.h"
-#include "plugin-runtime.h"
-#include "plugin-context.h"
-#include "watchdog_timer.h"
-#include "environment.h"
-#include "code-stubs.h"
-#include "linking.h"
+#include "../plugin-runtime.h"
+#include "../plugin-context.h"
+#include "../watchdog_timer.h"
+#include "../environment.h"
+#include "../code-stubs.h"
+#include "../linking.h"
 #include "frames-x86.h"
-#include "outofline-asm.h"
-#include "method-info.h"
-#include "runtime-helpers.h"
-#include "debugging.h"
+#include "../outofline-asm.h"
+#include "../method-info.h"
+#include "../runtime-helpers.h"
+#include "../debugging.h"
 
 #define __ masm.
 
