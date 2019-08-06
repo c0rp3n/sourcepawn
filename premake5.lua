@@ -21,6 +21,12 @@ workspace "sourcepawn"
     
     filter {}
 
+    defines {
+        'HAVE_STDINT_H',
+        'KE_THREADSAFE',
+        'SOURCEPAWN_VERSION="1.10"'
+    }
+
     newoption {
         trigger     = "build",
         value       = "option",
@@ -119,8 +125,59 @@ project "compiler"
         "zlib"
     }
 
+project "virtual-machine"
+    targetname "sourcepawn.jit.%{cfg.platform}"
+    targetdir "build/lib/%{cfg.platform}"
+    objdir "build"
+
+    kind "SharedLib"
+
     defines {
-        "HAVE_STDINT_H",
-        'SOURCEPAWN_VERSION="1.10"'
+        'SP_HAS_JIT'
+    }
+
+    includedirs {
+        _OPTIONS["amtl"],
+        _OPTIONS["amtl"] .. "/amtl",
+        _OPTIONS["zlib"],
+        "./include",
+        "./libsmx",
+        "./shared",
+        "./"
+    }
+
+    files {
+        "vm/md5/*.cpp",
+        "vm/md5/*.h",
+        "vm/*.cpp",
+        "vm/*.h"
+    }
+
+    removefiles {
+        "vm/code-stubs-null.cpp",
+        "vm/shell.cpp"
+    }
+
+    filter { "platforms:x86" }
+        files {
+            "vm/x86/*.cpp",
+            "vm/x86/*.h"
+        }
+
+        libdirs { "build/lib/x86" }
+
+    filter { "platforms:x64" }
+        files {
+            "vm/x64/*.cpp",
+            "vm/x64/*.h"
+        }
+
+        libdirs { "build/lib/x64" }
+
+    filter {}
+
+    links {
+        "libsmx",
+        "zlib"
     }
         
