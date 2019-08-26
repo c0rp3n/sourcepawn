@@ -125,12 +125,11 @@ project "compiler"
         "zlib"
     }
 
-project "virtual-machine"
-    targetname "sourcepawn.jit.%{cfg.platform}"
+project "libsourcepawn"
     targetdir "build/lib/%{cfg.platform}"
     objdir "build"
 
-    kind "SharedLib"
+    kind "StaticLib"
 
     defines {
         'SP_HAS_JIT'
@@ -155,6 +154,8 @@ project "virtual-machine"
 
     removefiles {
         "vm/code-stubs-null.cpp",
+        "vm/dll_exports.cpp",
+        "vm/dll_exports.h",
         "vm/shell.cpp"
     }
 
@@ -176,8 +177,91 @@ project "virtual-machine"
 
     filter {}
 
+project "virtual-machine"
+    targetname "sourcepawn.jit.%{cfg.platform}"
+    targetdir "build/lib/%{cfg.platform}"
+    objdir "build"
+
+    kind "SharedLib"
+
+    defines {
+        'SP_HAS_JIT'
+    }
+
+    includedirs {
+        _OPTIONS["amtl"],
+        _OPTIONS["amtl"] .. "/amtl",
+        _OPTIONS["zlib"],
+        "./include",
+        "./libsmx",
+        "./shared",
+        "./"
+    }
+
+    files {
+        "vm/dll_exports.cpp",
+        "vm/dll_exports.h"
+    }
+
     links {
         "libsmx",
+        "libsourcepawn",
+        "zlib"
+    }
+
+    filter { "toolset:gcc" }
+        linkoptions{"-Wl,--whole-archive libsourcepawn.a -Wl,--no-whole-archive"}
+
+    filter { "toolset:clang" }
+        linkoptions{"-Wl,-force-load,libsourcepawn.a"}
+
+    filter { "toolset:msc" }
+        linkoptions { "/WHOLEARCHIVE:build/lib/%{cfg.platform}/libsourcepawn.lib" }
+    
+    filter {}
+
+project "shell"
+    filter { "platforms:x86" }
+        targetname "spshell"
+
+    filter { "platforms:x64" }
+        targetname "spshell64"
+
+    filter {}
+
+    targetdir "build/bin/%{cfg.buildcfg}"
+    objdir "build"
+
+    kind "ConsoleApp"
+
+    defines {
+        'SP_HAS_JIT'
+    }
+
+    includedirs {
+        _OPTIONS["amtl"],
+        _OPTIONS["zlib"],
+        "./include",
+        "./libsmx",
+        "./shared",
+        "./vm",
+        "./"
+    }
+
+    files {
+        "vm/shell.cpp"
+    }
+
+    filter { "platforms:x86" }
+        libdirs { "build/lib/x86" }
+
+    filter { "platforms:x64" }
+        libdirs { "build/lib/x64" }
+
+    filter {}
+
+    links {
+        "sourcepawn.jit.%{cfg.platform}",
         "zlib"
     }
         
