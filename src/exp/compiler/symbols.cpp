@@ -15,10 +15,12 @@
 //
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "symbols.h"
-#include "scopes.h"
-#include "compile-context.h"
-#include "parser/ast.h"
+
+#include "exp/symbols.h"
+
+#include "exp/compile-context.h"
+#include "exp/scopes.h"
+#include "exp/parser/ast.h"
 
 namespace sp {
 

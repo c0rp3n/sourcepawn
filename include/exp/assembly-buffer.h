@@ -19,7 +19,8 @@
 #define _include_spcomp_assembly_buffer_h_
 
 #include <stdlib.h>
-#include "shared/byte-buffer.h"
+
+#include "byte-buffer.h"
 
 namespace sp {
 

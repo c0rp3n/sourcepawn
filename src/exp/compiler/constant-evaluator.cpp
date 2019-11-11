@@ -16,10 +16,13 @@
  * You should have received a copy of the GNU General Public License along with
  * SourcePawn. If not, see http://www.gnu.org/licenses/.
  */
-#include "parser/ast.h"
+
+#include "exp/constant-evaluator.h"
+
 #include <amtl/am-float.h>
-#include "constant-evaluator.h"
-#include "compile-context.h"
+
+#include "exp/parser/ast.h"
+#include "exp/compile-context.h"
 
 namespace sp {
 

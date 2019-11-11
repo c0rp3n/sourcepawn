@@ -18,8 +18,8 @@
 #ifndef _include_spcomp_name_resolver_h_
 #define _include_spcomp_name_resolver_h_
 
-#include "scopes.h"
-#include "type-resolver.h"
+#include "exp/scopes.h"
+#include "exp/sema/type-resolver.h"
 
 namespace sp {
 

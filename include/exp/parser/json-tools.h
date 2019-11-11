@@ -15,13 +15,15 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
+
 #ifndef _include_spcomp_json_tools_h_
 #define _include_spcomp_json_tools_h_
 
-#include "shared/string-pool.h"
-#include "pool-allocator.h"
-#include "boxed-value.h"
 #include <stdio.h>
+
+#include "string-pool.h"
+#include "exp/boxed-value.h"
+#include "exp/pool-allocator.h"
 
 namespace sp {
 

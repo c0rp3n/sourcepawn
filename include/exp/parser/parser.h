@@ -20,9 +20,10 @@
 #define _include_sourcepawn_parser_h_
 
 #include <stdio.h>
-#include "ast.h"
-#include "scopes.h"
-#include "process-options.h"
+
+#include "exp/scopes.h"
+#include "exp/process-options.h"
+#include "exp/parser/ast.h"
 
 namespace sp {
 

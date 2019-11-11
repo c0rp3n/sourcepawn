@@ -10,11 +10,13 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include <sp_vm_base.h>
-#include <sp_vm_api.h>
+
 #include <stdlib.h>
 #include <stdarg.h>
 #include <amtl/am-cxx.h>
+
+#include "sp_vm_base.h"
+#include "sp_vm_api.h"
 
 #if defined __linux__ || defined __APPLE__
 # if !defined(_GLIBCXX_USE_NOEXCEPT)

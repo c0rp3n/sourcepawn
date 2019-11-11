@@ -19,11 +19,11 @@
 #ifndef _include_sourcepawn_compiler_buffer_h_
 #define _include_sourcepawn_compiler_buffer_h_
 
-#include <am-allocator-policies.h>
+#include <amtl/am-allocator-policies.h>
 
 namespace sp {
 
-class CompileBuffer : public SystemAllocatorPolicy
+class CompileBuffer : public ke::SystemAllocatorPolicy
 {
   static const size_t kInitialLength = 1024;
 

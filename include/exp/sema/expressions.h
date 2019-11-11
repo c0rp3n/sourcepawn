@@ -18,8 +18,8 @@
 #ifndef _include_sourcepawn_sema_expressions_h_
 #define _include_sourcepawn_sema_expressions_h_
 
-#include "boxed-value.h"
-#include "pool-allocator.h"
+#include "exp/boxed-value.h"
+#include "exp/pool-allocator.h"
 
 namespace sp {
 

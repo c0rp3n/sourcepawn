@@ -15,10 +15,13 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "source-manager.h"
-#include "compile-context.h"
+
+#include "exp/source-manager.h"
+
 #include <stdio.h>
 #include <amtl/am-arithmetic.h>
+
+#include "exp/compile-context.h"
 
 using namespace ke;
 using namespace sp;

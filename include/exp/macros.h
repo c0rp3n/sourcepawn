@@ -18,11 +18,12 @@
 #ifndef _include_spcomp_macros_h_
 #define _include_spcomp_macros_h_
 
-#include "shared/string-pool.h"
-#include "pool-allocator.h"
-#include "source-location.h"
-#include "parser/tokens.h"
 #include <stddef.h>
+
+#include "string-pool.h"
+#include "exp/pool-allocator.h"
+#include "exp/source-location.h"
+#include "exp/parser/tokens.h"
 
 namespace sp {
 

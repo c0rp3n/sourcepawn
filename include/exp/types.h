@@ -19,10 +19,11 @@
 #ifndef _include_jc_types_h_
 #define _include_jc_types_h_
 
-#include "assert.h"
-#include "shared/string-pool.h"
-#include "pool-allocator.h"
+#include <assert.h>
 #include <amtl/am-enum.h>
+
+#include "string-pool.h"
+#include "exp/pool-allocator.h"
 
 namespace sp {
 

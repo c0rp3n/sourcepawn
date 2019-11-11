@@ -15,19 +15,22 @@
 //
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "compile-context.h"
-#include "compile-phases.h"
-#include "source-manager.h"
-#include "parser/preprocessor.h"
-#include "parser/parser.h"
-#include "sema/name-resolver.h"
-#include "sema/semantic-analysis.h"
-#include "shared/byte-buffer.h"
-#include "smx/smx-compiler.h"
+
+#include "exp/compile-context.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <amtl/os/am-fsutil.h>
+
+#include "byte-buffer.h"
+#include "exp/compile-phases.h"
+#include "exp/source-manager.h"
+#include "exp/parser/preprocessor.h"
+#include "exp/parser/parser.h"
+#include "exp/sema/name-resolver.h"
+#include "exp/sema/semantic-analysis.h"
+#include "exp/smx/smx-compiler.h"
 
 using namespace ke;
 using namespace sp;

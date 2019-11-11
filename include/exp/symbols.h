@@ -19,11 +19,11 @@
 #ifndef _include_sp2_symbol_h_
 #define _include_sp2_symbol_h_
 
-#include "pool-allocator.h"
-#include "types.h"
-#include "label.h"
-#include "boxed-value.h"
-#include "value-attrs.h"
+#include "exp/pool-allocator.h"
+#include "exp/types.h"
+#include "exp/label.h"
+#include "exp/boxed-value.h"
+#include "exp/value-attrs.h"
 
 namespace sp {
 

@@ -15,16 +15,19 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "compile-context.h"
-#include "parser/ast.h"
-#include "scopes.h"
-#include "smx-compiler.h"
-#include "array-helpers.h"
+
+#include "exp/smx/smx-compiler.h"
+
 #include <amtl/am-algorithm.h>
 #include <amtl/am-maybe.h>
 #include <amtl/am-string.h>
-#include <smx/smx-v1.h>
-#include <sp_vm_types.h>
+
+#include "sp_vm_types.h"
+#include "exp/compile-context.h"
+#include "exp/parser/ast.h"
+#include "exp/scopes.h"
+#include "exp/smx/array-helpers.h"
+#include "smx/smx-v1.h"
 
 #define __ masm_.
 

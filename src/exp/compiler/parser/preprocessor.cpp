@@ -15,8 +15,9 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "preprocessor.h"
-#include "auto-string.h"
+
+#include "exp/parser/preprocessor.h"
+
 #include <time.h>
 #ifdef WIN32
 # include <windows.h>
@@ -26,6 +27,8 @@
 # include <unistd.h>
 #endif
 #include <amtl/am-utility.h>
+
+#include "exp/auto-string.h"
 
 using namespace ke;
 using namespace sp;

@@ -24,8 +24,9 @@
 #include <limits.h>
 #include <stddef.h>
 #include <string.h>
-#include "source-location.h"
-#include "token-kind.h"
+
+#include "exp/source-location.h"
+#include "exp/token-kind.h"
 
 namespace sp {
 

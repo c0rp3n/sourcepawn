@@ -18,10 +18,10 @@
 #ifndef _include_spcomp_type_specifier_h_
 #define _include_spcomp_type_specifier_h_
 
-#include "types.h"
-#include "token-kind.h"
-#include "source-location.h"
-#include "pool-allocator.h"
+#include "exp/types.h"
+#include "exp/token-kind.h"
+#include "exp/source-location.h"
+#include "exp/pool-allocator.h"
 
 namespace sp {
 

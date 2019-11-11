@@ -16,12 +16,14 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 
-#include "array-helpers.h"
-#include "types.h"
-#include <amtl/am-bits.h>
-#include <amtl/am-algorithm.h>
+#include "exp/smx/array-helpers.h"
+
 #include <assert.h>
 #include <sp_vm_types.h>
+#include <amtl/am-bits.h>
+#include <amtl/am-algorithm.h>
+
+#include "exp/types.h"
 
 namespace sp {
 

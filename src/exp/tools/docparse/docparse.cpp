@@ -15,16 +15,18 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "shared/string-pool.h"
-#include "compiler/reporting.h"
-#include "compiler/source-manager.h"
-#include "compiler/compile-context.h"
-#include "compiler/parser/preprocessor.h"
-#include "compiler/parser/parser.h"
-#include "compiler/parser/json-tools.h"
-#include "compiler/sema/name-resolver.h"
+
 #include <assert.h>
 #include <amtl/experimental/am-argparser.h>
+
+#include "string-pool.h"
+#include "exp/reporting.h"
+#include "exp/source-manager.h"
+#include "exp/compile-context.h"
+#include "exp/parser/preprocessor.h"
+#include "exp/parser/parser.h"
+#include "exp/parser/json-tools.h"
+#include "exp/sema/name-resolver.h"
 
 using namespace ke;
 using namespace sp;

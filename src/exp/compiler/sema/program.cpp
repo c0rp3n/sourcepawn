@@ -15,9 +15,11 @@
 //
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "program.h"
-#include "expressions.h"
-#include "parser/ast.h"
+
+#include "exp/sema/program.h"
+
+#include "exp/parser/ast.h"
+#include "exp/sema/expressions.h"
 
 namespace sp {
 

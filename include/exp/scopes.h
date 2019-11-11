@@ -18,8 +18,8 @@
 #ifndef _include_jitcraft_scopes_h_
 #define _include_jitcraft_scopes_h_
 
-#include "pool-allocator.h"
-#include "scopes.h"
+#include "exp/pool-allocator.h"
+#include "exp/scopes.h"
 
 namespace sp {
 

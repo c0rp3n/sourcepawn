@@ -19,17 +19,17 @@
 #ifndef _include_sourcepawn_ast_h_
 #define _include_sourcepawn_ast_h_
 
-#include "shared/string-pool.h"
-#include "pool-allocator.h"
-#include "label.h"
-#include "tokens.h"
-#include "types.h"
-#include "symbols.h"
-#include "tokens.h"
-#include "type-specifier.h"
-#include "value-attrs.h"
-#include <amtl/am-vector.h>
 #include <limits.h>
+#include <amtl/am-vector.h>
+
+#include "string-pool.h"
+#include "exp/label.h"
+#include "exp/pool-allocator.h"
+#include "exp/types.h"
+#include "exp/symbols.h"
+#include "exp/value-attrs.h"
+#include "exp/parser/tokens.h"
+#include "exp/parser/type-specifier.h"
 
 namespace sp {
 

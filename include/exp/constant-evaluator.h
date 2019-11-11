@@ -19,8 +19,8 @@
 #ifndef _include_sp2_constant_evaluator_h_
 #define _include_sp2_constant_evaluator_h_
 
-#include "types.h"
-#include "symbols.h"
+#include "exp/types.h"
+#include "exp/symbols.h"
 
 namespace sp {
 

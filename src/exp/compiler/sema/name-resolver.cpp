@@ -15,8 +15,10 @@
 //
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "compile-context.h"
-#include "name-resolver.h"
+
+#include "exp/sema/name-resolver.h"
+
+#include "exp/compile-context.h"
 
 namespace sp {
 

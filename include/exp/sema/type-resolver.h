@@ -18,12 +18,13 @@
 #ifndef _include_spcomp_type_resolver_h_
 #define _include_spcomp_type_resolver_h_
 
-#include "parser/ast.h"
-#include "scopes.h"
-#include "symbols.h"
-#include "constant-evaluator.h"
-#include "types.h"
 #include <amtl/am-deque.h>
+
+#include "exp/scopes.h"
+#include "exp/symbols.h"
+#include "exp/constant-evaluator.h"
+#include "exp/types.h"
+#include "exp/parser/ast.h"
 
 namespace sp {
 

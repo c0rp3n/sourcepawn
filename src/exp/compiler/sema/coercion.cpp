@@ -16,10 +16,12 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 
-#include "compile-context.h"
-#include "semantic-analysis.h"
-#include "coercion.h"
+#include "exp/sema/coercion.h"
+
 #include <amtl/am-linkedlist.h>
+
+#include "exp/compile-context.h"
+#include "exp/sema/semantic-analysis.h"
 
 namespace sp {
 

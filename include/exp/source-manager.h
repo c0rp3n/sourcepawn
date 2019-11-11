@@ -23,8 +23,8 @@
 #include <amtl/am-vector.h>
 #include <amtl/am-fixedarray.h>
 #include <amtl/am-autoptr.h>
-#include "macros.h"
-#include "token-kind.h"
+#include "exp/macros.h"
+#include "exp/token-kind.h"
 
 namespace sp {
 

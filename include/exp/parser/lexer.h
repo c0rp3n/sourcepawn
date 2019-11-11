@@ -19,11 +19,12 @@
 #define _include_spcomp_lexer_h_
 
 #include <amtl/am-refcounting.h>
-#include "tokens.h"
-#include "source-manager.h"
-#include "process-options.h"
-#include "pool-allocator.h"
-#include "reporting.h"
+
+#include "exp/source-manager.h"
+#include "exp/process-options.h"
+#include "exp/pool-allocator.h"
+#include "exp/reporting.h"
+#include "exp/parser/tokens.h"
 
 namespace sp {
 

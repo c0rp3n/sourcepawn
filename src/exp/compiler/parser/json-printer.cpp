@@ -15,11 +15,13 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include <am-string.h>
-#include "ast.h"
-#include "compile-context.h"
-#include "json-tools.h"
-#include "source-manager.h"
+
+#include <amtl/am-string.h>
+
+#include "exp/compile-context.h"
+#include "exp/source-manager.h"
+#include "exp/parser/ast.h"
+#include "exp/parser/json-tools.h"
 
 using namespace ke;
 using namespace sp;

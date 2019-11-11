@@ -18,7 +18,7 @@
 #ifndef _include_spcomp2_compile_phases_
 #define _include_spcomp2_compile_phases_
 
-#include "compile-context.h"
+#include "exp/compile-context.h"
 
 namespace sp {
 

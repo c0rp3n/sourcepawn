@@ -20,7 +20,8 @@
 
 #include <amtl/am-enum.h>
 #include <amtl/am-flags.h>
-#include "boxed-value.h"
+
+#include "exp/boxed-value.h"
 
 namespace sp {
 

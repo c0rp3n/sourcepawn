@@ -18,9 +18,9 @@
 #ifndef _include_semantic_analysis_h_
 #define _include_semantic_analysis_h_
 
-#include "parser/ast.h"
-#include "sema/expressions.h"
-#include "sema/program.h"
+#include "exp/parser/ast.h"
+#include "exp/sema/expressions.h"
+#include "exp/sema/program.h"
 
 namespace sp {
 

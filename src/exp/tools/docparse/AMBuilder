@@ -19,9 +19,7 @@ import os
 
 binary = Root.Program(builder, 'docparse', arch)
 binary.compiler.cxxincludes += [
-  os.path.join(builder.sourcePath),
-  os.path.join(builder.sourcePath, 'exp'),
-  os.path.join(builder.sourcePath, 'exp/compiler'),
+  os.path.join(builder.sourcePath, 'include'),
 ]
 
 if binary.compiler.like('msvc'):

@@ -15,11 +15,14 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "compile-context.h"
-#include "semantic-analysis.h"
-#include "scopes.h"
-#include "symbols.h"
+
+#include "exp/sema/semantic-analysis.h"
+
 #include <amtl/am-linkedlist.h>
+
+#include "exp/compile-context.h"
+#include "exp/scopes.h"
+#include "exp/symbols.h"
 
 namespace sp {
 

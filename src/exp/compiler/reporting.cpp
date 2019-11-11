@@ -15,15 +15,17 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "reporting.h"
-#include "compile-context.h"
-#include "source-manager.h"
-#include "auto-string.h"
+
 #include <amtl/am-platform.h>
 #if defined(KE_POSIX)
 # include <unistd.h>
 # include <sys/ioctl.h>
 #endif
+
+#include "exp/reporting.h"
+#include "exp/compile-context.h"
+#include "exp/source-manager.h"
+#include "exp/auto-string.h"
 
 using namespace ke;
 using namespace sp;

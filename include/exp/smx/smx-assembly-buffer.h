@@ -18,9 +18,9 @@
 #ifndef _include_spcomp_smx_assembly_buffer_h_
 #define _include_spcomp_smx_assembly_buffer_h_
 
-#include "assembly-buffer.h"
-#include <smx/smx-v1-opcodes.h>
-#include <sp_vm_types.h>
+#include "sp_vm_types.h"
+#include "exp/assembly-buffer.h"
+#include "smx/smx-v1-opcodes.h"
 
 namespace sp {
 

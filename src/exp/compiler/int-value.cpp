@@ -15,9 +15,11 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "int-value.h"
-#include "compile-context.h"
-#include "parser/tokens.h"
+
+#include "exp/int-value.h"
+
+#include "exp/compile-context.h"
+#include "exp/parser/tokens.h"
 
 using namespace ke;
 using namespace sp;

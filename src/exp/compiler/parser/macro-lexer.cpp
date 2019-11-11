@@ -15,8 +15,10 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "macro-lexer.h"
-#include "preprocessor.h"
+
+#include "exp/parser/macro-lexer.h"
+
+#include "exp/parser/preprocessor.h"
 
 using namespace ke;
 using namespace sp;

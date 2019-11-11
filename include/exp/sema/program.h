@@ -18,9 +18,10 @@
 #ifndef _include_semantic_analysis_program_h_
 #define _include_semantic_analysis_program_h_
 
-#include <amtl/am-vector.h>
 #include <stdio.h>
-#include "pool-allocator.h"
+#include <amtl/am-vector.h>
+
+#include "exp/pool-allocator.h"
 
 namespace sp {
 

@@ -18,7 +18,7 @@
 #ifndef _include_spcomp_int_value_h_
 #define _include_spcomp_int_value_h_
 
-#include "token-kind.h"
+#include "exp/token-kind.h"
 #include <stdint.h>
 #include <limits.h>
 

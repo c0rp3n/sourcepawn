@@ -15,7 +15,9 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "json-tools.h"
+
+#include "exp/parser/json-tools.h"
+
 #include <stdio.h>
 
 using namespace ke;

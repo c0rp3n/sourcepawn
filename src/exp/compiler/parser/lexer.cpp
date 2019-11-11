@@ -15,13 +15,16 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "lexer.h"
-#include "compile-context.h"
-#include "preprocessor.h"
+
+#include "exp/parser/lexer.h"
+
 #include <ctype.h>
 #include <math.h>
 #include <stdarg.h>
 #include <amtl/am-arithmetic.h>
+
+#include "exp/compile-context.h"
+#include "exp/parser/preprocessor.h"
 
 using namespace ke;
 using namespace sp;

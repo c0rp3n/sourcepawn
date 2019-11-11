@@ -18,12 +18,12 @@
 #ifndef _include_spcomp_preprocessor_h_
 #define _include_spcomp_preprocessor_h_
 
-#include "compile-context.h"
-#include "keyword-table.h"
-#include "lexer.h"
-#include "macro-lexer.h"
-#include "process-options.h"
-#include "pool-allocator.h"
+#include "exp/compile-context.h"
+#include "exp/pool-allocator.h"
+#include "exp/process-options.h"
+#include "exp/parser/keyword-table.h"
+#include "exp/parser/lexer.h"
+#include "exp/parser/macro-lexer.h"
 
 namespace sp {
 

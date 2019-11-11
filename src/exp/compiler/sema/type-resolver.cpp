@@ -15,9 +15,11 @@
 //
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "type-resolver.h"
-#include "compile-context.h"
-#include "compile-phases.h"
+
+#include "exp/sema/type-resolver.h"
+
+#include "exp/compile-context.h"
+#include "exp/compile-phases.h"
 
 namespace sp {
 

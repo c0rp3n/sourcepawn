@@ -18,9 +18,9 @@
 #ifndef _include_spcomp_boxed_value_h_
 #define _include_spcomp_boxed_value_h_
 
-#include "types.h"
-#include "int-value.h"
-#include "float-value.h"
+#include "exp/types.h"
+#include "exp/int-value.h"
+#include "exp/float-value.h"
 
 namespace sp {
 

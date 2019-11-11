@@ -18,12 +18,13 @@
 #ifndef _include_spcomp_reporting_h_
 #define _include_spcomp_reporting_h_
 
-#include "shared/string-pool.h"
-#include "source-location.h"
 #include <amtl/am-refcounting.h>
 #include <amtl/am-vector.h>
 #include <amtl/am-string.h>
 #include <amtl/am-autoptr.h>
+
+#include "string-pool.h"
+#include "exp/source-location.h"
 
 namespace sp {
 

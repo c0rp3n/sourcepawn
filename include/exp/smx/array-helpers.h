@@ -19,10 +19,11 @@
 #ifndef _include_sourcepawn_emit_array_size_helpers_h_
 #define _include_sourcepawn_emit_array_size_helpers_h_
 
+#include <limits.h>
 #include <amtl/am-bits.h>
 #include <amtl/am-vector.h>
-#include <limits.h>
-#include <sp_vm_types.h>
+
+#include "sp_vm_types.h"
 
 namespace sp {
 

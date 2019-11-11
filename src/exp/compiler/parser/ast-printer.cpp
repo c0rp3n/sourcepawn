@@ -15,7 +15,9 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "ast.h"
+
+#include "exp/parser/ast.h"
+
 #include <amtl/am-string.h>
 
 namespace sp {

@@ -19,17 +19,18 @@
 #ifndef _include_jitcraft_compile_context_h_
 #define _include_jitcraft_compile_context_h_
 
+#include <stdarg.h>
+#include <string.h>
 #include <amtl/am-vector.h>
 #include <amtl/am-hashtable.h>
 #include <amtl/am-threadlocal.h>
-#include <stdarg.h>
-#include <string.h>
-#include "shared/string-pool.h"
-#include "pool-allocator.h"
-#include "auto-string.h"
-#include "type-manager.h"
-#include "process-options.h"
-#include "reporting.h"
+
+#include "string-pool.h"
+#include "exp/pool-allocator.h"
+#include "exp/auto-string.h"
+#include "exp/type-manager.h"
+#include "exp/process-options.h"
+#include "exp/reporting.h"
 
 namespace sp {
 

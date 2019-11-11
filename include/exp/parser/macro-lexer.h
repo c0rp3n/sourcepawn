@@ -19,11 +19,12 @@
 #define _include_spcomp_macro_lexer_h_
 
 #include <amtl/am-refcounting.h>
-#include "shared/string-pool.h"
-#include "source-location.h"
-#include "tokens.h"
-#include "macros.h"
-#include "source-manager.h"
+
+#include "string-pool.h"
+#include "exp/macros.h"
+#include "exp/source-location.h"
+#include "exp/source-manager.h"
+#include "exp/parser/tokens.h"
 
 namespace sp {
 

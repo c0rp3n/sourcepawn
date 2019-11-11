@@ -15,11 +15,14 @@
 // 
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
+
+#include "exp/parser/parser.h"
+
 #include <string.h>
-#include "shared/string-pool.h"
-#include "parser.h"
-#include "preprocessor.h"
-#include "sema/name-resolver.h"
+
+#include "string-pool.h"
+#include "exp/parser/preprocessor.h"
+#include "exp/sema/name-resolver.h"
 
 using namespace ke;
 

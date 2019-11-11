@@ -18,8 +18,8 @@
 #ifndef _include_sema_eval_context_h_
 #define _include_sema_eval_context_h_
 
-#include "parser/ast.h"
-#include "sema/expressions.h"
+#include "exp/parser/ast.h"
+#include "exp/sema/expressions.h"
 
 namespace sp {
 

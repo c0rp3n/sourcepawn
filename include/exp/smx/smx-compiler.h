@@ -19,12 +19,13 @@
 #ifndef _include_sourcepawn_emit_emitter_h_
 #define _include_sourcepawn_emit_emitter_h_
 
-#include "libsmx/smx-builder.h"
-#include "sema/expressions.h"
-#include "sema/program.h"
-#include "smx-assembly-buffer.h"
-#include "smx-ssa.h"
 #include <amtl/am-raii.h>
+
+#include "libsmx/smx-builder.h"
+#include "exp/sema/expressions.h"
+#include "exp/sema/program.h"
+#include "exp/smx/smx-assembly-buffer.h"
+#include "exp/smx/smx-ssa.h"
 
 namespace sp {
 
