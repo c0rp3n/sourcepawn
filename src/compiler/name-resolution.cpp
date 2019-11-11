@@ -20,12 +20,12 @@
 //
 //  Version: $Id$
 
-#include "errors.h"
-#include "expressions.h"
-#include "parse-node.h"
-#include "sc.h"
-#include "sclist.h"
-#include "scvars.h"
+#include "compiler/errors.h"
+#include "compiler/expressions.h"
+#include "compiler/parse-node.h"
+#include "compiler/sc.h"
+#include "compiler/sclist.h"
+#include "compiler/scvars.h"
 
 bool
 SymbolExpr::Bind()

@@ -22,7 +22,8 @@
 #include <amtl/am-string.h>
 #include <amtl/am-vector.h>
 #include <setjmp.h>
-#include "sc.h"
+
+#include "compiler/sc.h"
 
 struct memfile_t;
 

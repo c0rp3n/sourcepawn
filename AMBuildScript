@@ -291,24 +291,24 @@ class SourcePawn(object):
     self.EnsureLibSmx()
     self.EnsureAmtl()
     for arch in self.root.archs:
-      spcomp = self.BuildForArch('compiler/AMBuilder', arch)
+      spcomp = self.BuildForArch('src/compiler/AMBuilder', arch)
       self.spcomp[arch] = spcomp
 
   def BuildVM(self):
     self.EnsureZlib()
     self.EnsureAmtl()
     for arch in self.root.archs:
-      spshell, libsourcepawn = self.BuildForArch('vm/AMBuilder', arch)
+      spshell, libsourcepawn = self.BuildForArch('src/vm/AMBuilder', arch)
       self.spshell[arch] = spshell
       self.libsourcepawn[arch] = libsourcepawn
 
   def BuildExperimental(self):
     self.EnsureAmtl()
     for arch in self.root.archs:
-      libspcomp2 = self.BuildForArch('exp/compiler/AMBuilder', arch)
+      libspcomp2 = self.BuildForArch('src/exp/compiler/AMBuilder', arch)
       self.libspcomp2[arch] = libspcomp2
 
-      self.BuildForArch('exp/tools/docparse/AMBuilder', arch)
+      self.BuildForArch('src/tools/exp/docparse/AMBuilder', arch)
 
   def BuildSuite(self):
     self.BuildSpcomp()
@@ -323,7 +323,7 @@ class SourcePawn(object):
       def do_config(builder, name):
           return self.root.StaticLibrary(builder, name, arch)
       extra_vars = {'Configure': do_config}
-      libamtl = self.BuildForArch("third_party/amtl/amtl/AMBuilder", arch, extra_vars)
+      libamtl = self.BuildForArch("third_party/amtl/AMBuilder", arch, extra_vars)
       self.libamtl[arch] = libamtl.binary
 
   def EnsureZlib(self):
@@ -339,7 +339,7 @@ class SourcePawn(object):
       return
     self.libsmx = {}
     for arch in self.root.archs:
-      lib = self.BuildForArch('libsmx/AMBuilder', arch)
+      lib = self.BuildForArch('src/libsmx/AMBuilder', arch)
       self.libsmx[arch] = lib
 
   def BuildForArch(self, scripts, arch, extra_vars = {}):

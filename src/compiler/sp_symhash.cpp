@@ -1,10 +1,12 @@
 // vim: set ts=8 sts=2 sw=2 tw=99 et:
-#include "sp_symhash.h"
+#include "compiler/sp_symhash.h"
+
 #include <amtl/am-hashtable.h>
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
-#include "sc.h"
+
+#include "compiler/sc.h"
 
 struct NameAndScope {
     sp::Atom* name;

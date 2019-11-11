@@ -13,6 +13,8 @@
 #ifndef __BINRELOC_C__
 #define __BINRELOC_C__
 
+#include "compiler/binreloc.h"
+
 #ifdef ENABLE_BINRELOC
 	#include <sys/types.h>
 	#include <sys/stat.h>
@@ -22,13 +24,10 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <string.h>
-#include "binreloc.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
-
-
 
 /** @internal
  * Find the canonical filename of the executable. Returns the filename

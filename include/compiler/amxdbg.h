@@ -28,7 +28,7 @@
 #define AMXDBG_H_INCLUDED
 
 #ifndef AMX_H_INCLUDED
-#    include "amx.h"
+#    include "compiler/amx.h"
 #endif
 
 #ifdef __cplusplus

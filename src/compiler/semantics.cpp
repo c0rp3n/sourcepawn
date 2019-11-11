@@ -21,13 +21,13 @@
 //
 //  Version: $Id$
 
-#include "emitter.h"
-#include "errors.h"
-#include "expressions.h"
-#include "lexer.h"
-#include "parse-node.h"
-#include "sctracker.h"
-#include "scvars.h"
+#include "compiler/emitter.h"
+#include "compiler/errors.h"
+#include "compiler/expressions.h"
+#include "compiler/lexer.h"
+#include "compiler/parse-node.h"
+#include "compiler/sctracker.h"
+#include "compiler/scvars.h"
 
 static inline OpFunc TokenToOpFunc(int token) {
     switch (token) {

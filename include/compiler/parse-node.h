@@ -29,11 +29,11 @@
 #include <amtl/am-string.h>
 #include <amtl/am-vector.h>
 
-#include "expressions.h"
-#include "lexer.h"
-#include "pool-allocator.h"
-#include "sc.h"
-#include "shared/string-pool.h"
+#include "compiler/expressions.h"
+#include "compiler/lexer.h"
+#include "compiler/pool-allocator.h"
+#include "compiler/sc.h"
+#include "string-pool.h"
 
 struct UserOperation
 {

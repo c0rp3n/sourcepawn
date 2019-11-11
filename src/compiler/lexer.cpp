@@ -21,7 +21,8 @@
  *
  *  Version: $Id$
  */
-#include "lexer.h"
+#include "compiler/lexer.h"
+
 #include <amtl/am-hashmap.h>
 #include <amtl/am-platform.h>
 #include <amtl/am-string.h>
@@ -32,24 +33,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "emitter.h"
-#include "errors.h"
-#include "libpawnc.h"
-#include "lstring.h"
-#include "optimizer.h"
-#include "sc.h"
-#include "sci18n.h"
-#include "sclist.h"
-#include "scvars.h"
-#if defined __linux__ || defined __FreeBSD__ || defined __OpenBSD__
-#    include "sclinux.h"
-#endif
-#include "sp_symhash.h"
-#include "types.h"
-
 #if defined FORTIFY
 #    include <alloc/fortify.h>
 #endif
+
+#include "compiler/emitter.h"
+#include "compiler/errors.h"
+#include "compiler/libpawnc.h"
+#include "compiler/lstring.h"
+#include "compiler/optimizer.h"
+#include "compiler/sc.h"
+#include "compiler/sci18n.h"
+#include "compiler/sclist.h"
+#include "compiler/scvars.h"
+#if defined __linux__ || defined __FreeBSD__ || defined __OpenBSD__
+#    include "compiler/sclinux.h"
+#endif
+#include "compiler/sp_symhash.h"
+#include "compiler/types.h"
 
 using namespace sp;
 

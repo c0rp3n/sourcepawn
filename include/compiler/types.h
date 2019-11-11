@@ -30,8 +30,9 @@
 #include <amtl/am-string.h>
 #include <amtl/am-uniqueptr.h>
 #include <amtl/am-vector.h>
-#include <sp_vm_types.h>
-#include "amx.h"
+
+#include "sp_vm_types.h"
+#include "compiler/amx.h"
 
 #define TAGTYPEMASK (0x3E000000)
 #define TAGFLAGMASK (TAGTYPEMASK | 0x40000000)

@@ -5,7 +5,7 @@
  * (there is no need to include the same files twice).
  */
 
-#include "lstring.h"
+#include "compiler/lstring.h"
 
 #if !defined HAVE_SAFESTR
 

@@ -20,11 +20,11 @@
 //  3.  This notice may not be removed or altered from any source distribution.
 //
 //  Version: $Id$
+#include "compiler/expressions.h"
 
-#include "emitter.h"
-#include "errors.h"
-#include "expressions.h"
-#include "sctracker.h"
+#include "compiler/emitter.h"
+#include "compiler/errors.h"
+#include "compiler/sctracker.h"
 
 void
 Expr::Emit()

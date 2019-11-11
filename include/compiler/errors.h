@@ -28,8 +28,8 @@
 #include <stdarg.h>
 
 #include <amtl/am-string.h>
-#include "lexer.h"
-#include "sc.h"
+#include "compiler/lexer.h"
+#include "compiler/sc.h"
 
 enum class ErrorType { Suppressed, Warning, Error, Fatal };
 

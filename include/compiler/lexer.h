@@ -21,7 +21,7 @@
 
 #include <amtl/am-string.h>
 
-#include "sc.h"
+#include "compiler/sc.h"
 
 // The method name buffer is larger since we can include our parent class's
 // name, a "." to separate it, a "~" for constructors, or a ".get/.set" for

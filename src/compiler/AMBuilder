@@ -4,13 +4,9 @@ import os
 binary = Root.Program(builder, 'spcomp', arch)
 compiler = binary.compiler
 compiler.includes += [
-  os.path.join(SP.amtl, 'amtl'),
-  os.path.join(SP.amtl),
-  os.path.join(builder.currentSourcePath, '..', 'include'),
-  os.path.join(builder.currentSourcePath, '..', 'third_party'),
-  os.path.join(builder.buildPath, 'includes'),
-  os.path.join(builder.buildPath, builder.buildFolder),
-  os.path.join(builder.currentSourcePath, '..'),
+  os.path.join(SP.amtl, 'include'),
+  os.path.join(builder.sourcePath, '..', 'include'),
+  os.path.join(builder.sourcePath, '..', 'third_party'),
 ]
 
 if compiler.like('gcc'):

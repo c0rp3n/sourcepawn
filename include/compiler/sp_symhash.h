@@ -5,8 +5,9 @@
 #include <amtl/am-hashtable.h>
 #include <stddef.h>
 #include <string.h>
-#include "sc.h"
-#include "shared/string-pool.h"
+
+#include "compiler/sc.h"
+#include "string-pool.h"
 
 struct KeywordTablePolicy {
     static bool matches(const sp::CharsAndLength& a, const sp::CharsAndLength& b) {

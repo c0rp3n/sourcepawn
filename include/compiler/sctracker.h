@@ -2,8 +2,8 @@
 #ifndef _INCLUDE_SOURCEPAWN_COMPILER_TRACKER_H_
 #define _INCLUDE_SOURCEPAWN_COMPILER_TRACKER_H_
 
-#include "lexer.h"
-#include "scvars.h"
+#include "compiler/lexer.h"
+#include "compiler/scvars.h"
 
 #define MEMUSE_STATIC 0
 #define MEMUSE_DYNAMIC 1

@@ -1,14 +1,16 @@
 /* vim: set ts=8 sts=2 sw=2 tw=99 et: */
-#include "sctracker.h"
+#include "compiler/sctracker.h"
+
 #include <amtl/am-vector.h>
 #include <assert.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
-#include "emitter.h"
-#include "lexer.h"
-#include "sc.h"
-#include "types.h"
+
+#include "compiler/emitter.h"
+#include "compiler/lexer.h"
+#include "compiler/sc.h"
+#include "compiler/types.h"
 
 struct MemoryUse {
     MemoryUse(int type, int size)

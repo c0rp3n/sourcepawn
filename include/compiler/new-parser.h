@@ -21,10 +21,10 @@
 //
 //  Version: $Id$
 
-#include "amx.h"
-#include "expressions.h"
-#include "parse-node.h"
-#include "sc.h"
+#include "compiler/amx.h"
+#include "compiler/expressions.h"
+#include "compiler/parse-node.h"
+#include "compiler/sc.h"
 
 class Parser : public ExpressionParser
 {

@@ -47,6 +47,8 @@
  *
  *  Version: $Id$
  */
+#include "compiler/optimizer.h"
+
 #include <assert.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -55,19 +57,20 @@
 #if defined FORTIFY
 #    include <alloc/fortify.h>
 #endif
-#include "emitter.h"
-#include "errors.h"
-#include "lexer.h"
-#include "libpawnc.h"
-#include "sc.h"
-#include "scvars.h"
+
+#include "compiler/emitter.h"
+#include "compiler/errors.h"
+#include "compiler/lexer.h"
+#include "compiler/libpawnc.h"
+#include "compiler/sc.h"
+#include "compiler/scvars.h"
 
 #if defined _MSC_VER
 #    pragma warning(push)
 #    pragma warning(disable : 4125) /* decimal digit terminates octal escape sequence */
 #endif
 
-#include "patterns.h"
+#include "compiler/patterns.h"
 
 #if defined _MSC_VER
 #    pragma warning(pop)

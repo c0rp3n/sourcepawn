@@ -30,30 +30,32 @@
 #if defined FORTIFY
 #    include <alloc/fortify.h>
 #endif
-#include "amxdbg.h"
-#include "errors.h"
-#include "lstring.h"
-#include "sc.h"
-#include "sclist.h"
-#include "scvars.h"
-#if defined __linux__ || defined __FreeBSD__ || defined __OpenBSD__
-#    include "sclinux.h"
-#endif
 #include <amtl/am-hashmap.h>
 #include <amtl/am-string.h>
 #include <smx/smx-v1-opcodes.h>
 #include <smx/smx-v1.h>
 #include <zlib/zlib.h>
-#include "lexer.h"
-#include "libpawnc.h"
+
+#include "byte-buffer.h"
+#include "compiler/amxdbg.h"
+#include "compiler/errors.h"
+#include "compiler/lexer.h"
+#include "compiler/libpawnc.h"
+#include "compiler/memfile.h"
+#include "compiler/lstring.h"
+#include "compiler/sc.h"
+#include "compiler/sclist.h"
+#include "compiler/sctracker.h"
+#include "compiler/scvars.h"
+#if defined __linux__ || defined __FreeBSD__ || defined __OpenBSD__
+#    include "sclinux.h"
+#endif
+#include "compiler/sp_symhash.h"
+#include "compiler/types.h"
 #include "libsmx/data-pool.h"
 #include "libsmx/smx-builder.h"
 #include "libsmx/smx-encoding.h"
-#include "memfile.h"
-#include "sctracker.h"
-#include "shared/byte-buffer.h"
-#include "sp_symhash.h"
-#include "types.h"
+
 
 using namespace sp;
 using namespace ke;

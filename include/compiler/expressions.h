@@ -24,9 +24,9 @@
 #ifndef am_sourcepawn_compiler_sc3_h
 #define am_sourcepawn_compiler_sc3_h
 
-#include "amx.h"
-#include "parse-node.h"
-#include "sc.h"
+#include "compiler/amx.h"
+#include "compiler/parse-node.h"
+#include "compiler/sc.h"
 
 struct value;
 struct svalue;

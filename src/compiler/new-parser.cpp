@@ -20,21 +20,21 @@
 //  3.  This notice may not be removed or altered from any source distribution.
 //
 //  Version: $Id$
+#include "compiler/new-parser.h"
 
 #include <assert.h>
 #include <string.h>
 
-#include "emitter.h"
-#include "errors.h"
-#include "lexer.h"
-#include "new-parser.h"
-#include "optimizer.h"
-#include "parse-node.h"
-#include "sc.h"
-#include "sclist.h"
-#include "sctracker.h"
-#include "scvars.h"
-#include "types.h"
+#include "compiler/emitter.h"
+#include "compiler/errors.h"
+#include "compiler/lexer.h"
+#include "compiler/optimizer.h"
+#include "compiler/parse-node.h"
+#include "compiler/sc.h"
+#include "compiler/sclist.h"
+#include "compiler/sctracker.h"
+#include "compiler/scvars.h"
+#include "compiler/types.h"
 
 using namespace sp;
 

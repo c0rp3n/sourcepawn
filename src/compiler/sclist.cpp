@@ -26,7 +26,8 @@
  *
  *  Version: $Id$
  */
-#include "sclist.h"
+#include "compiler/sclist.h"
+
 #include <amtl/am-hashmap.h>
 #include <amtl/am-string.h>
 #include <assert.h>
@@ -34,11 +35,12 @@
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
-#include "errors.h"
-#include "lstring.h"
-#include "sc.h"
-#include "scvars.h"
-#include "sp_symhash.h"
+
+#include "compiler/errors.h"
+#include "compiler/lstring.h"
+#include "compiler/sc.h"
+#include "compiler/scvars.h"
+#include "compiler/sp_symhash.h"
 
 #if defined FORTIFY
 #    include <alloc/fortify.h>

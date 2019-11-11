@@ -21,6 +21,8 @@
  *
  *  Version: $Id$
  */
+#include "compiler/expressions.h"
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h> /* for _MAX_PATH */
@@ -29,17 +31,17 @@
 #    include <alloc/fortify.h>
 #endif
 #include <amtl/am-algorithm.h>
-#include "emitter.h"
-#include "errors.h"
-#include "expressions.h"
-#include "new-parser.h"
-#include "lexer.h"
-#include "optimizer.h"
-#include "sc.h"
-#include "sclist.h"
-#include "sctracker.h"
-#include "scvars.h"
-#include "types.h"
+
+#include "compiler/emitter.h"
+#include "compiler/errors.h"
+#include "compiler/new-parser.h"
+#include "compiler/lexer.h"
+#include "compiler/optimizer.h"
+#include "compiler/sc.h"
+#include "compiler/sclist.h"
+#include "compiler/sctracker.h"
+#include "compiler/scvars.h"
+#include "compiler/types.h"
 
 static void clear_value(value* lval);
 static void dropout(int lvalue, void (*testfunc)(int val), int exit1, value* lval);

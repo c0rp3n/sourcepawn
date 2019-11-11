@@ -44,11 +44,12 @@ typedef int jmp_buf[9];
 #endif
 #include <amtl/am-uniqueptr.h>
 #include <amtl/am-vector.h>
-#include <sp_vm_types.h>
-#include "amx.h"
-#include "osdefs.h"
-#include "shared/string-pool.h"
-#include "types.h"
+
+#include "sp_vm_types.h"
+#include "string-pool.h"
+#include "compiler/amx.h"
+#include "compiler/osdefs.h"
+#include "compiler/types.h"
 
 /* Note: the "cell" and "ucell" types are defined in AMX.H */
 

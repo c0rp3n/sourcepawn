@@ -17,13 +17,13 @@
 //  2.  Altered source versions must be plainly marked as such, and must not be
 //      misrepresented as being the original software.
 //  3.  This notice may not be removed or altered from any source distribution.
-#include "memfile.h"
+#include "compiler/memfile.h"
 
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
 
-#include "osdefs.h"
+#include "compiler/osdefs.h"
 
 memfile_t*
 memfile_creat(const char* name, size_t init)

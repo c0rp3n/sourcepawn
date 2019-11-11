@@ -22,6 +22,8 @@
  *
  *  Version: $Id$
  */
+#include "compiler/errors.h"
+
 #include <assert.h>
 #if defined __WIN32__ || defined _WIN32 || defined __MSDOS__
 #    include <io.h>
@@ -36,19 +38,19 @@
 #if defined FORTIFY
 #    include <alloc/fortify.h>
 #endif
-#include "errors.h"
-#include "lexer.h"
-#include "libpawnc.h"
-#include "sc.h"
-#include "sclist.h"
-#include "scvars.h"
+
+#include "compiler/lexer.h"
+#include "compiler/libpawnc.h"
+#include "compiler/sc.h"
+#include "compiler/sclist.h"
+#include "compiler/scvars.h"
 
 #if defined _MSC_VER
 #    pragma warning(push)
 #    pragma warning(disable : 4125) /* decimal digit terminates octal escape sequence */
 #endif
 
-#include "messages.h"
+#include "compiler/messages.h"
 
 #if defined _MSC_VER
 #    pragma warning(pop)

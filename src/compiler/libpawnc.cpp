@@ -23,14 +23,16 @@
  *
  *  Version: $Id$
  */
-#include "libpawnc.h"
+#include "compiler/libpawnc.h"
+
 #include <assert.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "memfile.h"
-#include "sc.h"
+
+#include "compiler/memfile.h"
+#include "compiler/sc.h"
 
 #if defined __linux__ || defined __FreeBSD__ || defined __OpenBSD__ || defined DARWIN
 #    include <sys/stat.h>

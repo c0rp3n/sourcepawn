@@ -22,12 +22,14 @@
  *
  *  Version: $Id$
  */
-#include "scvars.h"
+#include "compiler/scvars.h"
+
 #include <stdio.h>
 #include <stdlib.h> /* for _MAX_PATH */
-#include "emitter.h"
-#include "sc.h"
-#include "sp_symhash.h"
+
+#include "compiler/emitter.h"
+#include "compiler/sc.h"
+#include "compiler/sp_symhash.h"
 
 /*  global variables
  *

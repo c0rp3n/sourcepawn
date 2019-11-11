@@ -16,10 +16,11 @@
  * You should have received a copy of the GNU General Public License along with
  * SourcePawn. If not, see http://www.gnu.org/licenses/.
  */
+#include "compiler/pool-allocator.h"
+
 #include <assert.h>
 #include <stdlib.h>
 #include <new>
-#include "pool-allocator.h"
 
 using namespace ke;
 

@@ -21,6 +21,8 @@
  *
  *  Version: $Id$
  */
+#include "compiler/emitter.h"
+
 #include <assert.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -29,15 +31,15 @@
 #if defined FORTIFY
 #    include <alloc/fortify.h>
 #endif
-#include "emitter.h"
-#include "errors.h"
-#include "lexer.h"
-#include "libpawnc.h"
-#include "optimizer.h"
-#include "sc.h"
-#include "sclist.h"
-#include "sctracker.h"
-#include "scvars.h"
+
+#include "compiler/errors.h"
+#include "compiler/lexer.h"
+#include "compiler/libpawnc.h"
+#include "compiler/optimizer.h"
+#include "compiler/sc.h"
+#include "compiler/sclist.h"
+#include "compiler/sctracker.h"
+#include "compiler/scvars.h"
 
 static int fcurseg; /* the file number (fcurrent) for the active segment */
 

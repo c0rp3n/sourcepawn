@@ -23,11 +23,13 @@
  *
  *  Version: $Id$
  */
-#include "types.h"
+#include "compiler/types.h"
+
 #include <ctype.h>
-#include "sc.h"
-#include "sctracker.h"
-#include "scvars.h"
+
+#include "compiler/sc.h"
+#include "compiler/sctracker.h"
+#include "compiler/scvars.h"
 
 using namespace ke;
 

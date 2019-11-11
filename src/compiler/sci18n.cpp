@@ -37,10 +37,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "errors.h"
-#include "libpawnc.h"
-#include "sc.h"
-#include "scvars.h"
+
+#include "compiler/errors.h"
+#include "compiler/libpawnc.h"
+#include "compiler/sc.h"
+#include "compiler/scvars.h"
 
 #if !defined TRUE
 #    define FALSE 0
