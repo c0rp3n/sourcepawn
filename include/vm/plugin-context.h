@@ -13,9 +13,9 @@
 #ifndef _INCLUDE_SOURCEPAWN_V1CONTEXT_H_
 #define _INCLUDE_SOURCEPAWN_V1CONTEXT_H_
 
-#include "base-context.h"
-#include "scripted-invoker.h"
-#include "plugin-runtime.h"
+#include "vm/base-context.h"
+#include "vm/scripted-invoker.h"
+#include "vm/plugin-runtime.h"
 
 namespace sp {
 

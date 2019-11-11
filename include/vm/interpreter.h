@@ -20,10 +20,11 @@
 
 #include <assert.h>
 #include <amtl/am-refcounting.h>
-#include <sp_vm_types.h>
-#include "pcode-visitor.h"
-#include "pcode-reader.h"
-#include "stack-frames.h"
+
+#include "sp_vm_types.h"
+#include "vm/pcode-visitor.h"
+#include "vm/pcode-reader.h"
+#include "vm/stack-frames.h"
 
 namespace sp {
 

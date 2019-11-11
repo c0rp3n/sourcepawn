@@ -14,9 +14,12 @@
 // 
 // You should have received a copy of the GNU General Public License
 // along with SourcePawn.  If not, see <http://www.gnu.org/licenses/>.
-#include "watchdog_timer.h"
+
+#include "vm/watchdog_timer.h"
+
 #include <string.h>
-#include "environment.h"
+
+#include "vm/environment.h"
 
 using namespace sp;
 

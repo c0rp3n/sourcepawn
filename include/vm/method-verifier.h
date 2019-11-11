@@ -13,10 +13,11 @@
 #ifndef _include_sourcepawn_vm_method_verifier_h_
 #define _include_sourcepawn_vm_method_verifier_h_
 
-#include <sp_vm_types.h>
-#include <smx/smx-v1-opcodes.h>
 #include <amtl/am-function.h>
-#include "control-flow.h"
+
+#include "sp_vm_types.h"
+#include "smx/smx-v1-opcodes.h"
+#include "vm/control-flow.h"
 
 namespace sp {
 

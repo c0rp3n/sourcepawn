@@ -19,11 +19,11 @@
 #ifndef _include_sourcepawn_metadata_byte_buffer_h
 #define _include_sourcepawn_metadata_byte_buffer_h
 
-#include <amtl/am-bits.h>
-#include <amtl/am-uniqueptr.h>
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
+#include <amtl/am-bits.h>
+#include <amtl/am-uniqueptr.h>
 
 namespace sp {
 

@@ -17,11 +17,12 @@
 #ifndef _include_sourcepawn_jit_null_frames_h_
 #define _include_sourcepawn_jit_null_frames_h_
 
-#include <sp_vm_types.h>
 #include <amtl/am-platform.h>
 #if defined(SP_HAS_JIT)
 # error "Wrong architecture!"
 #endif
+
+#include "sp_vm_types.h"
 
 namespace sp {
 

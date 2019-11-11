@@ -31,9 +31,10 @@
 #ifndef _include_sourcepawn_assembler_x86_h__
 #define _include_sourcepawn_assembler_x86_h__
 
-#include <assembler.h>
-#include <am-vector.h>
 #include <string.h>
+#include <amtl/am-vector.h>
+
+#include "vm/assembler.h"
 
 namespace sp {
 

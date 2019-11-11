@@ -10,13 +10,15 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "method-verifier.h"
-#include "graph-builder.h"
-#include "opcodes.h"
-#include "plugin-runtime.h"
-#include "plugin-context.h"
+#include "vm/method-verifier.h"
+
 #include <assert.h>
 #include <limits.h>
+
+#include "vm/graph-builder.h"
+#include "vm/opcodes.h"
+#include "vm/plugin-runtime.h"
+#include "vm/plugin-context.h"
 
 namespace sp {
 

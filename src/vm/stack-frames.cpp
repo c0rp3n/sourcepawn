@@ -10,18 +10,20 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "environment.h"
-#include "plugin-runtime.h"
-#include "plugin-context.h"
-#include "stack-frames.h"
-#include "compiled-function.h"
-#include "method-info.h"
+
+#include "vm/stack-frames.h"
+
+#include "vm/environment.h"
+#include "vm/plugin-runtime.h"
+#include "vm/plugin-context.h"
+#include "vm/compiled-function.h"
+#include "vm/method-info.h"
 #if defined(KE_ARCH_X86)
-# include "x86/frames-x86.h"
+# include "vm/x86/frames-x86.h"
 #elif defined(KE_ARCH_X64)
-# include "x64/frames-x64.h"
+# include "vm/x64/frames-x64.h"
 #elif !defined(SP_HAS_JIT)
-# include "null-frame-layout.h"
+# include "vm/null-frame-layout.h"
 #endif
 
 using namespace ke;

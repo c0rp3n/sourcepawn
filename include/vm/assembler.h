@@ -36,7 +36,8 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <limits.h>
-#include "label.h"
+
+#include "vm/label.h"
 
 class AssemblerBase
 {

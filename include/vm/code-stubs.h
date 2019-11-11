@@ -14,7 +14,8 @@
 #define _include_sourcepawn_vm_code_stubs_h_
 
 #include <stdint.h>
-#include <sp_vm_api.h>
+
+#include "sp_vm_api.h"
 #include "code-allocator.h"
 
 namespace sp {

@@ -20,6 +20,7 @@
 
 #include <assert.h>
 #include <stdio.h>
+
 #include "sp_vm_types.h"
 
 /** SourcePawn Engine API Versions */

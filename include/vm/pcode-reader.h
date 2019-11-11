@@ -14,12 +14,13 @@
 #define _include_sourcepawn_vm_pcode_reader_h_
 
 #include <assert.h>
-#include <sp_vm_types.h>
-#include <smx/smx-v1-opcodes.h>
 #include <limits.h>
-#include "plugin-runtime.h"
-#include "control-flow.h"
-#include "opcodes.h"
+
+#include "sp_vm_types.h"
+#include "smx/smx-v1-opcodes.h"
+#include "vm/plugin-runtime.h"
+#include "vm/control-flow.h"
+#include "vm/opcodes.h"
 
 namespace sp {
 

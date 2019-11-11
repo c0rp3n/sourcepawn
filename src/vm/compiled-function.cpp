@@ -10,9 +10,12 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "compiled-function.h"
-#include "environment.h"
+
+#include "vm/compiled-function.h"
+
 #include <amtl/am-platform.h>
+
+#include "vm/environment.h"
 
 using namespace sp;
 

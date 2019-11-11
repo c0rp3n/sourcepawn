@@ -10,22 +10,25 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "environment.h"
-#include "watchdog_timer.h"
-#include "api.h"
-#include "watchdog_timer.h"
-#include "plugin-context.h"
-#include "pool-allocator.h"
-#include "method-info.h"
-#include "compiled-function.h"
-#include "code-stubs.h"
-#ifndef KE_EMSCRIPTEN
-#include "jit.h"
-#endif
-#include "interpreter.h"
-#include "builtins.h"
-#include "debugging.h"
+
+#include "vm/environment.h"
+
 #include <stdarg.h>
+
+#include "vm/watchdog_timer.h"
+#include "vm/api.h"
+#include "vm/watchdog_timer.h"
+#include "vm/plugin-context.h"
+#include "vm/pool-allocator.h"
+#include "vm/method-info.h"
+#include "vm/compiled-function.h"
+#include "vm/code-stubs.h"
+#ifndef KE_EMSCRIPTEN
+#include "vm/jit.h"
+#endif
+#include "vm/interpreter.h"
+#include "vm/builtins.h"
+#include "vm/debugging.h"
 
 using namespace sp;
 using namespace SourcePawn;

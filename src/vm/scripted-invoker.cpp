@@ -11,13 +11,15 @@
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
 
+#include "vm/scripted-invoker.h"
+
 #include <stdio.h>
 #include <string.h>
-#include "scripted-invoker.h"
-#include "plugin-runtime.h"
-#include "environment.h"
-#include "plugin-context.h"
-#include "method-info.h"
+
+#include "vm/plugin-runtime.h"
+#include "vm/environment.h"
+#include "vm/plugin-context.h"
+#include "vm/method-info.h"
 
 /********************
 * FUNCTION CALLING*

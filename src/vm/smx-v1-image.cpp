@@ -7,8 +7,9 @@
 // provided with this file, you can obtain it here:
 //   http://www.gnu.org/licenses/gpl.html
 //
-#include "smx-v1-image.h"
-#include "zlib/zlib.h"
+#include "vm/smx-v1-image.h"
+
+#include <zlib/zlib.h>
 #include <amtl/am-string.h>
 
 using namespace ke;

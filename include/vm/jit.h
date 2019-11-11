@@ -17,16 +17,17 @@
 #ifndef _include_sourcepawn_jit_h_
 #define _include_sourcepawn_jit_h_
 
-#include <sp_vm_types.h>
-#include <sp_vm_api.h>
-#include <am-vector.h>
-#include "macro-assembler.h"
-#include "opcodes.h"
-#include "pool-allocator.h"
-#include "outofline-asm.h"
-#include "pcode-visitor.h"
-#include "compiled-function.h"
-#include "control-flow.h"
+#include <amtl/am-vector.h>
+
+#include "sp_vm_types.h"
+#include "sp_vm_api.h"
+#include "vm/macro-assembler.h"
+#include "vm/opcodes.h"
+#include "vm/pool-allocator.h"
+#include "vm/outofline-asm.h"
+#include "vm/pcode-visitor.h"
+#include "vm/compiled-function.h"
+#include "vm/control-flow.h"
 
 namespace sp {
 

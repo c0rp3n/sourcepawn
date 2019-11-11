@@ -17,15 +17,16 @@
 #ifndef _INCLUDE_SOURCEPAWN_JIT_X86_H_
 #define _INCLUDE_SOURCEPAWN_JIT_X86_H_
 
-#include <sp_vm_types.h>
-#include <sp_vm_api.h>
-#include <am-vector.h>
-#include "jit.h"
-#include "plugin-runtime.h"
-#include "plugin-context.h"
-#include "compiled-function.h"
-#include "opcodes.h"
-#include "macro-assembler.h"
+#include <amtl/am-vector.h>
+
+#include "sp_vm_types.h"
+#include "sp_vm_api.h"
+#include "vm/jit.h"
+#include "vm/plugin-runtime.h"
+#include "vm/plugin-context.h"
+#include "vm/compiled-function.h"
+#include "vm/opcodes.h"
+#include "vm/macro-assembler.h"
 
 using namespace SourcePawn;
 

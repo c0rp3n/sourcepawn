@@ -11,11 +11,11 @@
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
 
+#include <stddef.h>
 #include <amtl/am-bits.h>
 #include <amtl/am-maybe.h>
 #include <amtl/am-function.h>
 #include <amtl/am-vector.h>
-#include <stddef.h>
 
 namespace sp {
 

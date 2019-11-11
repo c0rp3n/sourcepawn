@@ -15,13 +15,9 @@ def configure_like_shell(name, arch):
   return prog
 
 Includes = [
-  os.path.join(SP.amtl, 'amtl'),
-  os.path.join(SP.amtl),
-  os.path.join(builder.currentSourcePath),
-  os.path.join(builder.currentSourcePath, '..', 'third_party'),
-
-  # The include path for SP v2 stuff.
-  os.path.join(builder.sourcePath, 'sourcepawn', 'include'),
+  os.path.join(SP.amtl, 'include'),
+  os.path.join(builder.sourcePath, 'include'),
+  os.path.join(builder.sourcePath, 'third_party'),
 ]
 
 if builder.cxx.like('gcc'):

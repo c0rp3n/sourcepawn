@@ -10,12 +10,14 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include <sp_vm_api.h>
-#include "code-stubs.h"
-#include "linking.h"
-#include "macro-assembler-x64.h"
-#include "constants-x64.h"
-#include "plugin-context.h"
+
+#include "sp_vm_api.h"
+
+#include "vm/code-stubs.h"
+#include "vm/linking.h"
+#include "vm/plugin-context.h"
+#include "vm/x64/macro-assembler-x64.h"
+#include "vm/x64/constants-x64.h"
 
 #define __ masm.
 

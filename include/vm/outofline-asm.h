@@ -18,7 +18,8 @@
 #define _include_sourcepawn_outofline_asm_h__
 
 #include <assert.h>
-#include "pool-allocator.h"
+
+#include "vm/pool-allocator.h"
 
 namespace sp {
 

@@ -28,7 +28,7 @@
  *
  * Version: $Id$
  */
-#include "opcodes.h"
+#include "vm/opcodes.h"
 
 using namespace sp;
 using namespace SourcePawn;

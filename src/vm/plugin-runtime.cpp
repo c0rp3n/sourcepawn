@@ -10,19 +10,20 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "plugin-runtime.h"
+#include "vm/plugin-runtime.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
-#include <smx/smx-v1-opcodes.h>
-#include "compiled-function.h"
-#include "environment.h"
-#include "method-info.h"
-#include "plugin-context.h"
-#include "builtins.h"
 
-#include "md5/md5.h"
+#include "smx/smx-v1-opcodes.h"
+#include "vm/compiled-function.h"
+#include "vm/environment.h"
+#include "vm/method-info.h"
+#include "vm/plugin-context.h"
+#include "vm/builtins.h"
+#include "vm/md5/md5.h"
 
 using namespace sp;
 using namespace SourcePawn;

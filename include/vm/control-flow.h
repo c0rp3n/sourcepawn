@@ -13,12 +13,13 @@
 #ifndef _include_sourcepawn_vm_control_flow_h_
 #define _include_sourcepawn_vm_control_flow_h_
 
+#include <stdio.h>
 #include <amtl/am-inlinelist.h>
 #include <amtl/am-refcounting.h>
 #include <amtl/am-vector.h>
-#include <stdio.h>
-#include "plugin-runtime.h"
-#include "label.h"
+
+#include "vm/plugin-runtime.h"
+#include "vm/label.h"
 
 namespace sp {
 

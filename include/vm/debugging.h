@@ -18,7 +18,7 @@
 #ifndef _include_sourcepawn_vm_debugging_h_
 #define _include_sourcepawn_vm_debugging_h_
 
-#include "plugin-context.h"
+#include "vm/plugin-context.h"
 
 namespace sp {
 

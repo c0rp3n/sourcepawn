@@ -15,18 +15,20 @@
 // You should have received a copy of the GNU General Public License
 // along with SourcePawn.  If not, see <http://www.gnu.org/licenses/>.
 //
-#include "jit.h"
-#include "environment.h"
-#include "linking.h"
-#include "method-info.h"
-#include "opcodes.h"
-#include "outofline-asm.h"
-#include "pcode-reader.h"
-#include "plugin-runtime.h"
-#include "stack-frames.h"
-#include "watchdog_timer.h"
+
+#include "vm/jit.h"
+
+#include "vm/environment.h"
+#include "vm/linking.h"
+#include "vm/method-info.h"
+#include "vm/opcodes.h"
+#include "vm/outofline-asm.h"
+#include "vm/pcode-reader.h"
+#include "vm/plugin-runtime.h"
+#include "vm/stack-frames.h"
+#include "vm/watchdog_timer.h"
 #if defined(KE_ARCH_X86)
-# include "x86/jit_x86.h"
+# include "vm/x86/jit_x86.h"
 #endif
 
 namespace sp {

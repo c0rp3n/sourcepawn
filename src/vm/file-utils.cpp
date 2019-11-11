@@ -7,9 +7,12 @@
 // provided with this file, you can obtain it here:
 //   http://www.gnu.org/licenses/gpl.html
 //
+
+#include "vm/file-utils.h"
+
 #include <stdint.h>
-#include <smx/smx-headers.h>
-#include "file-utils.h"
+
+#include "smx/smx-headers.h"
 
 using namespace sp;
 

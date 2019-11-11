@@ -10,7 +10,9 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "assembler-x64.h"
+
+#include "vm/x64/assembler-x64.h"
+
 #include <string.h>
 
 namespace sp {

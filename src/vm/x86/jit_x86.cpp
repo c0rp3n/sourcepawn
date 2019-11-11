@@ -29,21 +29,23 @@
  * Version: $Id$
  */
 
+#include "vm/x86/jit_x86.h"
+
 #include <string.h>
 #include <stdlib.h>
 #include <assert.h>
-#include "jit_x86.h"
-#include "plugin-runtime.h"
-#include "plugin-context.h"
-#include "watchdog_timer.h"
-#include "environment.h"
-#include "code-stubs.h"
-#include "linking.h"
-#include "frames-x86.h"
-#include "outofline-asm.h"
-#include "method-info.h"
-#include "runtime-helpers.h"
-#include "debugging.h"
+
+#include "vm/plugin-runtime.h"
+#include "vm/plugin-context.h"
+#include "vm/watchdog_timer.h"
+#include "vm/environment.h"
+#include "vm/code-stubs.h"
+#include "vm/linking.h"
+#include "vm/x86/frames-x86.h"
+#include "vm/outofline-asm.h"
+#include "vm/method-info.h"
+#include "vm/runtime-helpers.h"
+#include "vm/debugging.h"
 
 #define __ masm.
 

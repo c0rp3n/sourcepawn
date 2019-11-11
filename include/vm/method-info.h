@@ -13,9 +13,10 @@
 #ifndef _INCLUDE_SOURCEPAWN_VM_METHOD_INFO_H_
 #define _INCLUDE_SOURCEPAWN_VM_METHOD_INFO_H_
 
-#include <sp_vm_types.h>
 #include <amtl/am-refcounting.h>
-#include "control-flow.h"
+
+#include "sp_vm_types.h"
+#include "vm/control-flow.h"
 
 namespace sp {
 

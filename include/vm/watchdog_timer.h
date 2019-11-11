@@ -19,7 +19,7 @@
 
 #include <stddef.h>
 #include <stdint.h>
-#include <am-thread-utils.h>
+#include <amtl/am-thread-utils.h>
 
 namespace SourcePawn {
   class IErrorReport;

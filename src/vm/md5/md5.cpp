@@ -40,7 +40,7 @@ documentation and/or software.
 
  */
 
-#include "md5.h"
+#include "vm/md5/md5.h"
 
 #include <assert.h>
 #include <string.h>

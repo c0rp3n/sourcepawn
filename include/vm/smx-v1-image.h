@@ -11,13 +11,15 @@
 #define _include_sourcepawn_smx_parser_h_
 
 #include <stdio.h>
-#include <smx/smx-headers.h>
-#include <smx/smx-legacy-debuginfo.h>
-#include <smx/smx-typeinfo.h>
-#include <smx/smx-v1.h>
-#include <am-string.h>
-#include <am-vector.h>
-#include <sp_vm_types.h>
+
+#include <amtl/am-string.h>
+#include <amtl/am-vector.h>
+
+#include "sp_vm_types.h"
+#include "smx/smx-headers.h"
+#include "smx/smx-legacy-debuginfo.h"
+#include "smx/smx-typeinfo.h"
+#include "smx/smx-v1.h"
 #include "file-utils.h"
 #include "legacy-image.h"
 

@@ -31,12 +31,13 @@
 #ifndef _include_sourcepawn_macroassembler_x86h__
 #define _include_sourcepawn_macroassembler_x86h__
 
-#include <assembler.h>
-#include <am-vector.h>
 #include <string.h>
-#include "assembler-x86.h"
-#include "stack-frames.h"
-#include "environment.h"
+#include <amtl/am-vector.h>
+
+#include "vm/assembler.h"
+#include "vm/stack-frames.h"
+#include "vm/environment.h"
+#include "vm/x86/assembler-x86.h"
 
 namespace sp {
 

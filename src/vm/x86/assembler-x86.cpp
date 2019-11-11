@@ -28,7 +28,8 @@
  *
  * Version: $Id$
  */
-#include "assembler-x86.h"
+
+#include "vm/x86/assembler-x86.h"
 
 namespace sp {
 

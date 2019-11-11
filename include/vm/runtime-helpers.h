@@ -17,7 +17,7 @@
 #ifndef _include_sourcepawn_runtime_helpers_h_
 #define _include_sourcepawn_runtime_helpers_h_
 
-#include <sp_vm_types.h>
+#include "sp_vm_types.h"
 
 namespace sp {
 

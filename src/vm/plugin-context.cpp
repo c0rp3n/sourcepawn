@@ -10,15 +10,18 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
+
+#include "vm/plugin-context.h"
+
 #include <string.h>
 #include <stdarg.h>
 #include <assert.h>
 #include <limits.h>
-#include <sp_vm_api.h>
-#include "plugin-context.h"
-#include "watchdog_timer.h"
-#include "environment.h"
-#include "method-info.h"
+
+#include "sp_vm_api.h"
+#include "vm/watchdog_timer.h"
+#include "vm/environment.h"
+#include "vm/method-info.h"
 
 using namespace sp;
 using namespace SourcePawn;

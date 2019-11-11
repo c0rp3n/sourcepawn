@@ -37,7 +37,7 @@
  * @brief Contains JIT export/linkage macros.
  */
 
-#include <sp_vm_api.h>
+#include "sp_vm_api.h"
 
 /* :TODO: rename this to sp_vm_linkage.h */
 

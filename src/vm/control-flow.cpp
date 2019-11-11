@@ -11,9 +11,11 @@
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
 
-#include "control-flow.h"
-#include "opcodes.h"
+#include "vm/control-flow.h"
+
 #include <amtl/am-string.h>
+
+#include "vm/opcodes.h"
 
 namespace sp {
 

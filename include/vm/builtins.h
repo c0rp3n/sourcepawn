@@ -13,9 +13,10 @@
 #ifndef _include_sourcepawn_vm_builtins_h_
 #define _include_sourcepawn_vm_builtins_h_
 
-#include <sp_vm_types.h>
-#include <amtl/am-hashmap.h>
 #include <string.h>
+#include <amtl/am-hashmap.h>
+
+#include "sp_vm_types.h"
 
 namespace sp {
 

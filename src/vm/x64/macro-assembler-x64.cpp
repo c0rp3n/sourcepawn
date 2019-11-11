@@ -10,8 +10,10 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "macro-assembler-x64.h"
-#include "environment.h"
+
+#include "vm/x64/macro-assembler-x64.h"
+
+#include "vm/environment.h"
 
 namespace sp {
 

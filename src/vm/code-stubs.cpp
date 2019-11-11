@@ -10,8 +10,10 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "code-stubs.h"
-#include "environment.h"
+
+#include "vm/code-stubs.h"
+
+#include "vm/environment.h"
 
 using namespace sp;
 

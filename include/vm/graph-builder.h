@@ -20,10 +20,10 @@
 #include <amtl/am-refcounting.h>
 #include <amtl/am-string.h>
 #include <amtl/am-uniqueptr.h>
-#include <sp_vm_types.h>
-#include <smx/smx-v1-opcodes.h>
-#include "control-flow.h"
-#include "bitset.h"
+#include "sp_vm_types.h"
+#include "smx/smx-v1-opcodes.h"
+#include "vm/control-flow.h"
+#include "vm/bitset.h"
 
 namespace sp {
 

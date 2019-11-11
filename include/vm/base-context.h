@@ -13,7 +13,7 @@
 #ifndef _INCLUDE_SOURCEPAWN_BASECONTEXT_H_
 #define _INCLUDE_SOURCEPAWN_BASECONTEXT_H_
 
-#include <sp_vm_api.h>
+#include "sp_vm_api.h"
 
 using namespace SourcePawn;
 namespace sp {

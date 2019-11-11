@@ -20,9 +20,8 @@ import os
 
 binary = Root.StaticLibrary(builder, 'smx', arch)
 binary.compiler.cxxincludes += [
-  os.path.join(builder.currentSourcePath, '..'),
-  os.path.join(builder.currentSourcePath, '..', 'include'),
-  os.path.join(SP.amtl),
+  os.path.join(SP.amtl, 'include'),
+  os.path.join(builder.sourcePath, 'include'),
 ]
 binary.sources += [
   'data-pool.cpp',

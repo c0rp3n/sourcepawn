@@ -25,8 +25,9 @@
 #include <smx/smx-headers.h>
 #include <smx/smx-typeinfo.h>
 #include <stdlib.h>
-#include "shared/string-atom.h"
-#include "smx-buffer.h"
+
+#include "string-atom.h"
+#include "libsmx/smx-buffer.h"
 
 namespace sp {
 

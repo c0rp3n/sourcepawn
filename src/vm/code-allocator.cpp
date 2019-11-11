@@ -10,8 +10,10 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
+
+#include "vm/code-allocator.h"
+
 #include <assert.h>
-#include "code-allocator.h"
 #if defined(_WIN32)
 # include <Windows.h>
 #else

@@ -10,14 +10,16 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include <sp_vm_api.h>
+
 #include <stdlib.h>
 #include <stdarg.h>
 #include <amtl/am-cxx.h>
 #include <amtl/experimental/am-argparser.h>
-#include "dll_exports.h"
-#include "environment.h"
-#include "stack-frames.h"
+
+#include "sp_vm_api.h"
+#include "vm/dll_exports.h"
+#include "vm/environment.h"
+#include "vm/stack-frames.h"
 
 #ifdef __EMSCRIPTEN__
 # include <emscripten.h>

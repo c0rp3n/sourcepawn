@@ -10,11 +10,12 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include <sp_vm_api.h>
-#include "code-stubs.h"
-#include "linking.h"
-#include "jit_x86.h"
-#include "environment.h"
+
+#include "sp_vm_api.h"
+#include "vm/code-stubs.h"
+#include "vm/linking.h"
+#include "vm/x86/jit_x86.h"
+#include "vm/environment.h"
 
 using namespace sp;
 using namespace SourcePawn;

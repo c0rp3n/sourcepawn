@@ -13,8 +13,9 @@
 #ifndef _include_sourcepawn_vm_api_h_
 #define _include_sourcepawn_vm_api_h_
 
-#include <sp_vm_api.h>
-#include <am-cxx.h> // Replace with am-cxx later.
+#include <amtl/am-cxx.h> // Replace with am-cxx later.
+
+#include "sp_vm_api.h"
 
 namespace sp {
 

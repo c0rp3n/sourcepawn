@@ -17,8 +17,9 @@
 #ifndef _include_sourcepawn_jit_frames_x64_h_
 #define _include_sourcepawn_jit_frames_x64_h_
 
-#include <sp_vm_types.h>
 #include <amtl/am-platform.h>
+
+#include "sp_vm_types.h"
 
 namespace sp {
 

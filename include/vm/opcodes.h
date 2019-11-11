@@ -32,9 +32,9 @@
 #ifndef _INCLUDE_SOURCEPAWN_JIT_X86_OPCODES_H_
 #define _INCLUDE_SOURCEPAWN_JIT_X86_OPCODES_H_
 
-#include <smx/smx-v1-opcodes.h>
-#include <sp_vm_types.h>
-#include "plugin-runtime.h"
+#include "sp_vm_types.h"
+#include "smx/smx-v1-opcodes.h"
+#include "vm/plugin-runtime.h"
 
 namespace sp {
 

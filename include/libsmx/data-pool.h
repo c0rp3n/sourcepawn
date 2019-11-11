@@ -24,7 +24,8 @@
 #include <amtl/am-vector.h>
 #include <stdint.h>
 #include <string.h>
-#include "shared/byte-buffer.h"
+
+#include "byte-buffer.h"
 
 namespace sp {
 

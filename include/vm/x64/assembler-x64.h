@@ -13,10 +13,11 @@
 #ifndef _include_sourcepawn_vm_assembler_x64_h__
 #define _include_sourcepawn_vm_assembler_x64_h__
 
-#include <assembler.h>
 #include <amtl/am-platform.h>
 #include <amtl/am-assert.h>
 #include <amtl/am-vector.h>
+
+#include "vm/assembler.h"
 
 namespace sp {
 

@@ -14,8 +14,10 @@
 // 
 // You should have received a copy of the GNU General Public License
 // along with SourcePawn.  If not, see <http://www.gnu.org/licenses/>.
-#include "runtime-helpers.h"
-#include "environment.h"
+
+#include "vm/runtime-helpers.h"
+
+#include "vm/environment.h"
 
 namespace sp {
 

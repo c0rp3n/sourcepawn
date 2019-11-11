@@ -10,11 +10,14 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
-#include "debugging.h"
-#include "stack-frames.h"
-#include "environment.h"
-#include "watchdog_timer.h"
+
+#include "vm/debugging.h"
+
 #include <amtl/am-raii.h>
+
+#include "vm/stack-frames.h"
+#include "vm/environment.h"
+#include "vm/watchdog_timer.h"
 
 namespace sp {
 

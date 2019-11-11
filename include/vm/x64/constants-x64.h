@@ -17,7 +17,7 @@
 #ifndef _include_sourcepawn_vm_constants_x64_h__
 #define _include_sourcepawn_vm_constants_x64_h__
 
-#include "assembler-x64.h"
+#include "vm/x64/assembler-x64.h"
 
 namespace sp {
 

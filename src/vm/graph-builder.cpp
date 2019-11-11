@@ -11,10 +11,11 @@
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
 
-#include "graph-builder.h"
-#include "plugin-runtime.h"
-#include <smx/smx-v1-opcodes.h>
-#include "opcodes.h"
+#include "vm/graph-builder.h"
+
+#include "smx/smx-v1-opcodes.h"
+#include "vm/plugin-runtime.h"
+#include "vm/opcodes.h"
 
 namespace sp {
 

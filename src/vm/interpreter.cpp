@@ -15,19 +15,22 @@
 // You should have received a copy of the GNU General Public License
 // along with SourcePawn.  If not, see <http://www.gnu.org/licenses/>.
 //
-#include "interpreter.h"
-#include "debugging.h"
-#include "environment.h"
-#include "method-info.h"
-#include "plugin-context.h"
-#include "pcode-reader.h"
-#include "runtime-helpers.h"
-#include "watchdog_timer.h"
-#include <amtl/am-algorithm.h>
-#include <amtl/am-float.h>
+
+#include "vm/interpreter.h"
+
 #include <fenv.h>
 #include <math.h>
 #include <stdlib.h>
+#include <amtl/am-algorithm.h>
+#include <amtl/am-float.h>
+
+#include "vm/debugging.h"
+#include "vm/environment.h"
+#include "vm/method-info.h"
+#include "vm/plugin-context.h"
+#include "vm/pcode-reader.h"
+#include "vm/runtime-helpers.h"
+#include "vm/watchdog_timer.h"
 
 namespace sp {
 

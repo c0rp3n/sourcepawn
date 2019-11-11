@@ -13,13 +13,14 @@
 #ifndef _include_sourcepawn_vm_environment_h_
 #define _include_sourcepawn_vm_environment_h_
 
-#include <sp_vm_api.h>
 #include <amtl/am-cxx.h>
 #include <amtl/am-inlinelist.h>
 #include <amtl/am-thread-utils.h>
-#include "code-allocator.h"
-#include "plugin-runtime.h"
-#include "stack-frames.h"
+
+#include "sp_vm_api.h"
+#include "vm/code-allocator.h"
+#include "vm/plugin-runtime.h"
+#include "vm/stack-frames.h"
 
 namespace sp {
 

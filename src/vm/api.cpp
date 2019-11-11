@@ -10,13 +10,12 @@
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
 //
+
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
 #include <assert.h>
-#include "environment.h"
-#include "api.h"
-#include <zlib/zlib.h>
+
 #if defined __GNUC__
 #include <unistd.h>
 #endif
@@ -32,13 +31,18 @@
 #include <malloc.h>
 #endif
 
+#include <amtl/am-string.h>
+#include <zlib/zlib.h>
+
 #if defined(SOURCEMOD_BUILD)
 # include <sourcemod_version.h>
 # define SOURCEPAWN_VERSION SOURCEMOD_VERSION
 #endif
-#include "code-stubs.h"
-#include "smx-v1-image.h"
-#include <amtl/am-string.h>
+
+#include "vm/environment.h"
+#include "vm/api.h"
+#include "vm/code-stubs.h"
+#include "vm/smx-v1-image.h"
 
 using namespace sp;
 using namespace SourcePawn;

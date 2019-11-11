@@ -13,8 +13,8 @@
 #ifndef _include_sourcepawn_vm_pcode_visitor_h_
 #define _include_sourcepawn_vm_pcode_visitor_h_
 
-#include <sp_vm_types.h>
-#include <smx/smx-v1-opcodes.h>
+#include "sp_vm_types.h"
+#include "smx/smx-v1-opcodes.h"
 
 namespace sp {
 

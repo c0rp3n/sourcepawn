@@ -15,8 +15,9 @@
 //
 // You should have received a copy of the GNU General Public License along with
 // SourcePawn. If not, see http://www.gnu.org/licenses/.
-#include "smx-builder.h"
-#include "shared/string-pool.h"
+#include "libsmx/smx-builder.h"
+
+#include "string-pool.h"
 
 namespace sp {
 

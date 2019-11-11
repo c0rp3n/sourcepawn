@@ -14,7 +14,8 @@
 #define _include_sourcepawn_vm_legacy_image_h_
 
 #include <string.h>
-#include <smx/smx-headers.h>
+
+#include "smx/smx-headers.h"
 
 namespace sp {
 
