@@ -178,7 +178,12 @@ TypedefDecl::Bind()
 bool
 UsingDecl::Bind()
 {
-    declare_handle_intrinsics();
+    if (strcmp(this->name()->chars(), "Handle") == 0) {
+        declare_handle_intrinsics();
+    }
+    else if (strcmp(this->name()->chars(), "Object") == 0) {
+        declare_native_object_intrinsics();
+    }
     return true;
 }
 

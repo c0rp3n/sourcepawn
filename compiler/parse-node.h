@@ -307,8 +307,8 @@ class PstructDecl : public StructDecl
 class UsingDecl : public Decl
 {
   public:
-    explicit UsingDecl(const token_pos_t& pos)
-      : Decl(pos, nullptr)
+    explicit UsingDecl(const token_pos_t& pos, sp::Atom* name)
+      : Decl(pos, name)
     {}
 
     bool Bind() override;

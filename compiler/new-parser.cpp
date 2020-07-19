@@ -354,8 +354,8 @@ Parser::parse_using()
 {
     auto pos = current_pos();
 
-    auto validate = []() -> bool {
-        token_ident_t ident;
+    token_ident_t ident;
+    auto validate = [&ident]() -> bool {
         if (!needsymbol(&ident))
             return false;
         if (strcmp(ident.name, "__intrinsics__") != 0) {
@@ -366,7 +366,8 @@ Parser::parse_using()
             return false;
         if (!needsymbol(&ident))
             return false;
-        if (strcmp(ident.name, "Handle") != 0) {
+        if ((strcmp(ident.name, "Handle") != 0) &&
+            (strcmp(ident.name, "Object") != 0)) {
             error(156);
             return false;
         }
@@ -378,7 +379,7 @@ Parser::parse_using()
     }
 
     require_newline(TerminatorPolicy::Semicolon);
-    return new UsingDecl(pos);
+    return new UsingDecl(pos, gAtoms.add(ident.name));
 }
 
 Stmt*

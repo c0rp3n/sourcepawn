@@ -213,6 +213,7 @@ static int Execute(const char* file)
   BindNative(rt, "dump_stack_trace", DumpStackTrace);
   BindNative(rt, "report_error", ReportError);
   BindNative(rt, "CloseHandle", DoNothing);
+  BindNative(rt, "CloseObject", DoNothing);
 
   IPluginFunction* fun = rt->GetFunctionByName("main");
   if (!fun)

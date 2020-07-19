@@ -3331,3 +3331,31 @@ declare_handle_intrinsics()
         map->methods.push_back(std::move(close));
     }
 }
+
+void
+declare_native_object_intrinsics()
+{
+    // Must not have an existing Handle methodmap.
+    if (methodmap_find_by_name("Object")) {
+        error(156);
+        return;
+    }
+
+    methodmap_t* map = methodmap_add(nullptr, Layout_MethodMap, "Object");
+    map->nullable = true;
+
+    declare_methodmap_symbol(map, true);
+
+    if (symbol* sym = findglb("CloseObject")) {
+        auto dtor = std::make_unique<methodmap_method_t>(map);
+        dtor->target = sym;
+        strcpy(dtor->name, "~Object");
+        map->dtor = dtor.get();
+        map->methods.push_back(std::move(dtor));
+
+        auto close = std::make_unique<methodmap_method_t>(map);
+        close->target = sym;
+        strcpy(close->name, "Close");
+        map->methods.push_back(std::move(close));
+    }
+}

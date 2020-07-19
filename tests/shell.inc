@@ -25,3 +25,7 @@ native int execute(int count, InvokeCallback fn);
 enum Handle { INVALID_HANDLE = 0 }
 native void CloseHandle(Handle h);
 using __intrinsics__.Handle;
+
+enum Object { INVALID_OBJECT = 0 }
+native void CloseObject(Object obj);
+using __intrinsics__.Object;

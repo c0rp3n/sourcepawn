@@ -1853,7 +1853,8 @@ class ParseTree : public PoolObject
  public:
   ParseTree(StatementList* statements)
     : statements_(statements),
-      uses_handle_intrinsics_(false)
+      uses_handle_intrinsics_(false),
+      uses_native_object_intrinsics_(false)
   {
   }
 
@@ -1871,8 +1872,16 @@ class ParseTree : public PoolObject
     uses_handle_intrinsics_ = true;
   }
 
+  bool uses_native_object_intrinsics() const {
+    return uses_handle_intrinsics_;
+  }
+  void set_uses_native_object_intrinsics() {
+    uses_native_object_intrinsics_ = true;
+  }
+
  private:
   bool uses_handle_intrinsics_;
+  bool uses_native_object_intrinsics_;
 };
 
 // For new AstVisitors, copy-paste.

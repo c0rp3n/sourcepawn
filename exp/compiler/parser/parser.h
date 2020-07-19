@@ -158,6 +158,7 @@ class Parser
   NameResolver& delegate_;
   bool allowDeclarations_;
   bool uses_handle_intrinsics_;
+  bool uses_native_object_intrinsics_;
 
   Atom* atom_Float_;
   Atom* atom_String_;

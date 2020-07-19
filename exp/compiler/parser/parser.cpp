@@ -34,7 +34,8 @@ Parser::Parser(CompileContext& cc, Preprocessor& pp, NameResolver& resolver)
   options_(cc_.options()),
   delegate_(resolver),
   allowDeclarations_(true),
-  uses_handle_intrinsics_(false)
+  uses_handle_intrinsics_(false),
+  uses_native_object_intrinsics_(false)
 {
   atom_Float_ = cc_.add("Float");
   atom_String_ = cc_.add("String");
@@ -2233,6 +2234,10 @@ Parser::using_()
     uses_handle_intrinsics_ = true;
     return true;
   }
+  else if (strcmp(name->chars(), "Object") == 0) {
+    uses_native_object_intrinsics_ = true;
+    return true;
+  }
 
   cc_.report(scanner_.begin(), rmsg::intrinsic_not_found) <<
     name;
@@ -2333,6 +2338,8 @@ Parser::parse()
   ParseTree* pt = new (pool_) ParseTree(list);
   if (uses_handle_intrinsics_)
     pt->set_uses_handle_intrinsics();
+  if (uses_native_object_intrinsics_)
+    pt->set_uses_native_object_intrinsics();
   return pt;
 }
 
