@@ -44,8 +44,8 @@ namespace sp
             ~object_entry();
 
             // only moveable
-            inline object_entry (object_entry &&) = default;
-            inline object_entry& operator= (object_entry &&) = default;
+            object_entry (object_entry &&);
+            object_entry& operator= (object_entry &&);
             inline object_entry (const object_entry &) = delete;
             inline object_entry& operator= (const object_entry &) = delete;
         };
