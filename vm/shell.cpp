@@ -190,6 +190,28 @@ static cell_t ReportError(IPluginContext* cx, const cell_t* params)
   return 0;
 }
 
+static cell_t CreatePair(IPluginContext* cx, const cell_t* params)
+{
+  
+  fprintf(stdout, "CreatePair()\n");
+  auto obj = new std::pair<cell_t, cell_t>(params[1], params[2]);
+  size_t index = g_object_sys.register_object(obj, [](void* object) { delete reinterpret_cast<std::pair<int, int>*>(object); });
+  fprintf(stdout, "obj: %p, index: %zu\n", obj, index);
+  return static_cast<cell_t>(index);
+}
+
+static cell_t GetPairFirst(IPluginContext* cx, const cell_t* params)
+{
+  auto obj = g_object_sys.get_object<std::pair<cell_t,cell_t>>(params[1]);
+  return obj->first;
+}
+
+static cell_t GetPairSecond(IPluginContext* cx, const cell_t* params)
+{
+  auto obj = g_object_sys.get_object<std::pair<cell_t,cell_t>>(params[1]);
+  return obj->second;
+}
+
 static int Execute(const char* file)
 {
   char error[255];
@@ -214,6 +236,9 @@ static int Execute(const char* file)
   BindNative(rt, "dump_stack_trace", DumpStackTrace);
   BindNative(rt, "report_error", ReportError);
   BindNative(rt, "CloseHandle", DoNothing);
+  BindNative(rt, "Pair.Pair", CreatePair);
+  BindNative(rt, "Pair.First", GetPairFirst);
+  BindNative(rt, "Pair.Second", GetPairSecond);
   BindNative(rt, "CloseObject", sp::object_sys::close_object);
 
   IPluginFunction* fun = rt->GetFunctionByName("main");

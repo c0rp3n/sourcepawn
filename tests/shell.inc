@@ -29,3 +29,10 @@ using __intrinsics__.Handle;
 enum Object { INVALID_OBJECT = 0 }
 native void CloseObject(Object obj);
 using __intrinsics__.Object;
+
+methodmap Pair < Object
+{
+    public native Pair(any first, any second);
+    public native any First();
+    public native any Second();
+}
