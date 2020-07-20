@@ -61,6 +61,7 @@ library.sources += [
   'md5/md5.cpp',
   'method-info.cpp',
   'method-verifier.cpp',
+  'object-sys.cpp',
   'opcodes.cpp',
   'plugin-context.cpp',
   'plugin-runtime.cpp',

@@ -17,6 +17,7 @@
 #include <amtl/experimental/am-argparser.h>
 #include "dll_exports.h"
 #include "environment.h"
+#include "object-sys.h"
 #include "stack-frames.h"
 
 #ifdef __EMSCRIPTEN__
@@ -213,7 +214,7 @@ static int Execute(const char* file)
   BindNative(rt, "dump_stack_trace", DumpStackTrace);
   BindNative(rt, "report_error", ReportError);
   BindNative(rt, "CloseHandle", DoNothing);
-  BindNative(rt, "CloseObject", DoNothing);
+  BindNative(rt, "CloseObject", sp::object_sys::close_object);
 
   IPluginFunction* fun = rt->GetFunctionByName("main");
   if (!fun)
