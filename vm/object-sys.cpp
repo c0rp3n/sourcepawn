@@ -35,23 +35,28 @@ sp::object_sys::object_entry::~object_entry()
 
 sp::object_sys g_object_sys;
 
-size_t sp::object_sys::register_object(void* object, cleanup_func_t deleter)
+size_t sp::object_sys::register_object(void* object, uint32_t type, cleanup_func_t deleter)
 {
     // if we have a unused index lets reuse it
     size_t index;
     if (this->m_free_obj_idxs.size() > 0)
     {
         index = this->m_free_obj_idxs.back();
-        this->m_objects.emplace(this->m_objects.begin() + index, object, deleter);
+        this->m_objects.emplace(this->m_objects.begin() + index, object, type, deleter);
         this->m_free_obj_idxs.pop_back();
     }
     else
     {
         index = this->m_objects.size();
-        this->m_objects.emplace_back(object, deleter);
+        this->m_objects.emplace_back(object, type, deleter);
     }
 
     return index;
+}
+
+sp::object_sys::object_entry& sp::object_sys::get_object(size_t index)
+{
+    return this->m_objects[index];
 }
 
 void sp::object_sys::release_object(size_t index)
