@@ -70,6 +70,7 @@ void sp::object_sys::release_object(size_t index)
 
     // clear index for reuse so that other index's are not invalidated
     entry.object = nullptr;
+    entry.type = 0;
     entry.deleter = sp::object_sys::cleanup_func_t();
     this->m_free_obj_idxs.push_back(index);
 }
