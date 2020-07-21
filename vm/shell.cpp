@@ -17,6 +17,7 @@
 #include <amtl/experimental/am-argparser.h>
 #include "dll_exports.h"
 #include "environment.h"
+#include "tag.hpp"
 #include "object-sys.h"
 #include "stack-frames.h"
 
@@ -190,26 +191,37 @@ static cell_t ReportError(IPluginContext* cx, const cell_t* params)
   return 0;
 }
 
+constexpr auto pair_tag = sp::tag<"pair"_hs>::value;
+typedef std::pair<cell_t, cell_t> pair;
+
 static cell_t CreatePair(IPluginContext* cx, const cell_t* params)
 {
-  
-  fprintf(stdout, "CreatePair()\n");
-  auto obj = new std::pair<cell_t, cell_t>(params[1], params[2]);
-  size_t index = g_object_sys.register_object(obj, [](void* object) { delete reinterpret_cast<std::pair<int, int>*>(object); });
-  fprintf(stdout, "obj: %p, index: %zu\n", obj, index);
+  auto obj = new pair(params[1], params[2]);
+  size_t index = g_object_sys.register_object(obj, pair_tag, [](void* object) { delete reinterpret_cast<std::pair<int, int>*>(object); });
+
   return static_cast<cell_t>(index);
 }
 
 static cell_t GetPairFirst(IPluginContext* cx, const cell_t* params)
 {
-  auto obj = g_object_sys.get_object<std::pair<cell_t,cell_t>>(params[1]);
-  return obj->first;
+  auto& obj = g_object_sys.get_object(params[1]);
+  if (obj.type != pair_tag)
+  {
+    return cx->ThrowNativeError("Object is not of type \"pair\"");
+  }
+
+  return obj.get<pair>()->first;
 }
 
 static cell_t GetPairSecond(IPluginContext* cx, const cell_t* params)
 {
-  auto obj = g_object_sys.get_object<std::pair<cell_t,cell_t>>(params[1]);
-  return obj->second;
+  auto& obj = g_object_sys.get_object(params[1]);
+  if (obj.type != pair_tag)
+  {
+    return cx->ThrowNativeError("Object is not of type \"pair\"");
+  }
+
+  return obj.get<pair>()->second;
 }
 
 static int Execute(const char* file)
