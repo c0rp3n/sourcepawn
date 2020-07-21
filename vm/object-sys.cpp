@@ -5,8 +5,9 @@ sp::object_sys::object_entry::object_entry() : object(nullptr), deleter()
 }
 
 sp::object_sys::object_entry::object_entry(void* object,
+                                           uint32_t type,
                                            cleanup_func_t deleter) :
-    object(object), deleter(deleter)
+    object(object), type(type), deleter(deleter)
 {
 }
 
